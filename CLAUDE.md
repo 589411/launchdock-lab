@@ -54,6 +54,7 @@
 | `tomorrow` | 強烈建議 | ≤ 50 字 | 「明天就能做的一件事」 |
 | `cover` | 選填 | 檔名 | 檔案必須存在於 assets/covers/ |
 | `qr` | 選填 | true/false | 上課投影時顯示 QR code 按鈕 |
+| `pinned` | 選填 | true/false | 置頂(排在所有卡片最前面) |
 
 ### links.kind 對照
 

@@ -72,7 +72,7 @@ def card(p: dict) -> str:
     {f'<span class="badge warn">連結異常</span>' if p["status"] == "broken" else ""}
   </div>
   <div class="body">
-    <div class="meta"><span class="cat">{esc(p["category"])}</span>{level_dots(p["level"])}</div>
+    <div class="meta"><span class="cat">{"📌 " if p.get("pinned") else ""}{esc(p["category"])}</span>{level_dots(p["level"])}</div>
     <h3>{esc(p["title"])}</h3>
     <p class="summary">{esc(p["summary"])}</p>
     {desc}
@@ -85,8 +85,9 @@ def card(p: dict) -> str:
 def main():
     projects = yaml.safe_load((ROOT / "data" / "projects.yaml").read_text(encoding="utf-8")) or []
     visible = [p for p in projects if p["status"] != "archived"]
-    visible.sort(key=lambda p: (p["status"] == "broken", str(p["added"])), reverse=False)
+    # 排序:pinned 置頂 → 新到舊
     visible.sort(key=lambda p: str(p["added"]), reverse=True)
+    visible.sort(key=lambda p: not p.get("pinned", False))
 
     DIST.mkdir(exist_ok=True)
     COVERS_DST.mkdir(exist_ok=True)

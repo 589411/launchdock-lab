@@ -23,6 +23,7 @@
       "tomorrow": { "type": "string", "maxLength": 50 },
       "cover": { "type": "string", "pattern": "^[a-z0-9-]+\\.(png|jpg|jpeg|webp|svg)$" },
       "qr": { "type": "boolean" },
+      "pinned": { "type": "boolean" },
       "links": {
         "type": "array",
         "minItems": 1,
