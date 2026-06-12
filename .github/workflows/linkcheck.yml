@@ -1,0 +1,55 @@
+name: Weekly Link Check
+
+on:
+  schedule:
+    - cron: "0 1 * * 1"   # 每週一 09:00 台灣時間
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml requests
+      - name: Check links
+        id: check
+        run: |
+          python - <<'EOF'
+          import yaml, requests, os
+          projects = yaml.safe_load(open("data/projects.yaml", encoding="utf-8")) or []
+          bad = []
+          for p in projects:
+              if p.get("status") != "active" or p.get("check") != "head":
+                  continue
+              for l in p.get("links", []):
+                  try:
+                      r = requests.head(l["url"], timeout=15, allow_redirects=True,
+                                        headers={"User-Agent": "Mozilla/5.0 launchdock-lab-linkcheck"})
+                      if r.status_code >= 400:
+                          r = requests.get(l["url"], timeout=15, allow_redirects=True,
+                                           headers={"User-Agent": "Mozilla/5.0 launchdock-lab-linkcheck"})
+                      if r.status_code >= 400:
+                          bad.append(f"- `{p['id']}` → {l['label']}: {l['url']} (HTTP {r.status_code})")
+                  except Exception as e:
+                      bad.append(f"- `{p['id']}` → {l['label']}: {l['url']} ({type(e).__name__})")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"count={len(bad)}\n")
+          open("badlinks.md", "w", encoding="utf-8").write("\n".join(bad))
+          print("\n".join(bad) or "all good")
+          EOF
+      - name: Open issue if broken links found
+        if: steps.check.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "🔗 連結巡檢:發現 ${{ steps.check.outputs.count }} 個失效連結 ($(date +%F))" \
+            --body "$(printf '以下連結檢查失敗,請依 CLAUDE.md 模式 C 處理:\n\n%s' "$(cat badlinks.md)")" \
+            --label maintenance

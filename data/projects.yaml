@@ -1,0 +1,125 @@
+# Launchdock Lab 資料來源(唯一真相)
+# 規則見 CLAUDE.md。新增條目請照 CLAUDE.md 範例,加在檔案末尾。
+# 修改後必跑:python scripts/validate.py
+
+- id: launchdock-site
+  title: 藍鴨 Launchdock 官網
+  type: website
+  category: 教學
+  level: 3
+  modules: [M03]
+  platforms: [Cloudflare, GitHub]
+  summary: 半自動內容產線:GitHub 發布、Cloudflare 部署的教學內容站。
+  tomorrow: 用 GitHub Pages 免費發布你的第一個網頁
+  links:
+    - { label: 開啟網站, url: "https://launchdock.app", kind: open }
+  status: active
+  check: head
+  added: 2026-06-12
+
+- id: gas-ordering
+  title: 🍱 GAS 點餐系統
+  type: gas-webapp
+  category: 自動化
+  level: 3
+  platforms: [GAS, Google Sheets]
+  summary: 點餐前台＋管理後台,資料直接進試算表,零伺服器成本。
+  tomorrow: 開一張 Google Sheet,寫第一個 onEdit 觸發器
+  qr: true
+  links:
+    - { label: 點餐前台, url: "https://script.google.com/macros/s/REPLACE/exec", kind: open }
+    - { label: 管理後台, url: "https://script.google.com/macros/s/REPLACE2/exec", kind: admin }
+  status: active
+  check: head
+  added: 2026-06-12
+
+- id: gas-line-push
+  title: 📲 LINE 自動推播
+  type: gas-line
+  category: 自動化
+  level: 3
+  platforms: [GAS, LINE]
+  summary: 表單送出後自動推播 LINE 通知,適合社團與小店家。
+  tomorrow: 申請一個 LINE Messaging API channel
+  qr: true
+  links:
+    - { label: 加 LINE 體驗, url: "https://lin.ee/REPLACE", kind: line-add }
+    - { label: 看影片, url: "https://youtu.be/REPLACE", kind: video }
+  status: active
+  check: none
+  added: 2026-06-12
+
+- id: notion-course-tracker
+  title: 📚 課程進度追蹤模板
+  type: notion-template
+  category: 教學
+  level: 2
+  platforms: [Notion]
+  summary: 一鍵複製的課程管理模板,含進度看板與回顧資料庫。
+  tomorrow: 複製模板,建立你的第一個 Notion 資料庫
+  links:
+    - { label: 複製模板, url: "https://www.notion.so/REPLACE?duplicate=true", kind: duplicate }
+  status: active
+  check: none
+  added: 2026-06-12
+
+- id: gemini-meeting-notes
+  title: 📝 會議記錄助手
+  type: llm-tool
+  category: 寫作
+  level: 1
+  platforms: [Gemini]
+  summary: 貼上逐字稿,自動產出結構化會議記錄與待辦清單。
+  tomorrow: 把今天的會議錄音丟給 AI 整理一次
+  links:
+    - { label: 啟動工具, url: "https://gemini.google.com/share/REPLACE", kind: open }
+  status: active
+  check: none
+  added: 2026-06-12
+
+- id: n8n-article-pipeline
+  title: ⚙️ 文章自動產線
+  type: n8n-workflow
+  category: 自動化
+  level: 3
+  modules: [M03]
+  platforms: [n8n]
+  summary: 從主題到發布的半自動文章工作流,人只負責審稿。
+  tomorrow: 安裝 n8n,跑通第一個 webhook 節點
+  links:
+    - { label: 看影片, url: "https://youtu.be/REPLACE", kind: video }
+  status: active
+  check: none
+  added: 2026-06-12
+
+- id: openclaw
+  title: 🦞 GitHub 小龍蝦 OpenClaw
+  type: repo
+  category: 自動化
+  level: 3
+  platforms: [GitHub Actions, LINE]
+  summary: 用 GitHub Issues 當指令台的多代理自動化系統,跑在免費額度上。
+  tomorrow: 在任一 repo 開一個 Issue,寫下你想自動化的一件事
+  links:
+    - { label: 原始碼, url: "https://github.com/REPLACE/openclaw", kind: repo }
+  status: active
+  check: none
+  added: 2026-06-12
+
+- id: daily-bread
+  title: 📖 每日靈糧 中靈版
+  type: website
+  category: 生活
+  level: 3
+  platforms: [Cloudflare, PWA, LINE]
+  summary: 行動優先的每日讀經站:Firebase 跨裝置同步進度、LINE 分享,可安裝到手機桌面。
+  description: 示範 PWA 安裝、Firebase 跨裝置進度同步(Google 登入)、LINE 分享、深色模式與 Cloudflare 部署。前端純靜態,後端只用 Firebase 免費額度。
+  tomorrow: 幫任何網頁加上 manifest.json,讓它能安裝到手機桌面
+  qr: true
+  links:
+    - { label: 開始讀經, url: "https://daily-bread.launchdock.app", kind: open }
+    - { label: 我的計畫, url: "https://daily-bread.launchdock.app/planner.html", kind: doc }
+    - { label: 原始碼, url: "https://github.com/589411/daily-bread", kind: repo }
+  status: active
+  check: head
+  added: 2026-06-12

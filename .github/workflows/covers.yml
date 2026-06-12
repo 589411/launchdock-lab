@@ -1,0 +1,40 @@
+name: Auto Covers
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_id:
+        description: "強制重截某筆條目的 id(留空 = 只補缺)"
+        required: false
+        default: ""
+  schedule:
+    - cron: "0 2 1 * *"   # 每月 1 號補缺一次
+
+permissions:
+  contents: write
+
+jobs:
+  covers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          pip install pyyaml playwright
+          playwright install --with-deps chromium
+      - name: Take screenshots
+        run: |
+          if [ -n "${{ github.event.inputs.force_id }}" ]; then
+            python scripts/screenshot.py --force "${{ github.event.inputs.force_id }}"
+          else
+            python scripts/screenshot.py
+          fi
+      - name: Commit new covers
+        run: |
+          git config user.name "lab-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add assets/covers
+          git diff --cached --quiet || git commit -m "covers: auto screenshot"
+          git push
