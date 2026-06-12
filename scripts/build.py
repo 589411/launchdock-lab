@@ -3,6 +3,7 @@
 import hashlib, html, shutil
 from datetime import date
 from pathlib import Path
+from typing import Optional
 
 import yaml
 
@@ -41,7 +42,7 @@ def level_dots(level: int) -> str:
     dots = "".join(f'<i class="{ "on" if i <= level else "" }"></i>' for i in (1, 2, 3))
     return f'<span class="lv" title="Level {level}:{LEVEL_LABEL[level]}">{dots}<b>L{level} {LEVEL_LABEL[level]}</b></span>'
 
-def resolve_cover(p: dict) -> str | None:
+def resolve_cover(p: dict) -> Optional[str]:
     """封面三層邏輯:明確指定 → 自動偵測 <id>.png/jpg/webp → None(佔位圖)"""
     if p.get("cover"):
         return p["cover"]

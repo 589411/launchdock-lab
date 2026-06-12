@@ -49,19 +49,20 @@
   check: none
   added: 2026-06-12
 
-- id: notion-course-tracker
-  title: 📚 課程進度追蹤模板
+- id: smart-church-ops
+  title: ⛪ 智慧型教會營運系統
   type: notion-template
-  category: 教學
+  category: 自動化
   level: 2
   platforms: [Notion]
-  summary: 一鍵複製的課程管理模板,含進度看板與回顧資料庫。
-  tomorrow: 複製模板,建立你的第一個 Notion 資料庫
+  summary: 專為新拓植與小型教會設計的行政管理模板，提升日常運作效率。資料為 AI 生成的模擬數據。
+  description: 特別針對新拓植的教會、小型教會提供完整行政管理模板，涵蓋成員管理、活動規劃、財務追蹤等，所有範例資料均為 AI 生成的模擬數據。
+  tomorrow: 複製模板，建立你的第一個教會行政管理資料庫
   links:
-    - { label: 複製模板, url: "https://www.notion.so/REPLACE?duplicate=true", kind: duplicate }
+    - { label: 複製模板, url: "https://app.notion.com/marketplace/templates/smart-church-ops-systems?cr=pro%3Ajosephchang", kind: duplicate }
   status: active
   check: none
-  added: 2026-06-12
+  added: 2026-06-13
 
 - id: gemini-meeting-notes
   title: 📝 會議記錄助手
