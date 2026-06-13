@@ -18,17 +18,19 @@
   added: 2026-06-12
 
 - id: gas-ordering
-  title: 🍱 GAS 點餐系統
+  title: 🍜 初原麵場點餐系統
   type: gas-webapp
   category: 自動化
   level: 3
   platforms: [GAS, Google Sheets]
-  summary: 點餐前台＋管理後台,資料直接進試算表,零伺服器成本。
-  tomorrow: 開一張 Google Sheet,寫第一個 onEdit 觸發器
+  summary: 同網址加 ?page=kitchen 變廚房後台!示範 GAS 打造完整前後端,資料存 Google Sheet。
+  description: 示範 Google 生態全端應用:doGet() 根據網址參數分流畫面,顧客看點餐前台,廚房加 ?page=kitchen 看備餐系統。訂單即時寫入 Google Sheet,零伺服器、零費用。
+  tomorrow: 寫一個 doGet(e) 函式,用 e.parameter 判斷要回傳哪個 HTML 頁面
   qr: true
   links:
     - { label: 點餐前台, url: "https://script.google.com/macros/s/REPLACE/exec", kind: open }
-    - { label: 管理後台, url: "https://script.google.com/macros/s/REPLACE2/exec", kind: admin }
+    - { label: 廚房後台, url: "https://script.google.com/macros/s/REPLACE/exec?page=kitchen", kind: admin }
+    - { label: 訂單資料, url: "https://docs.google.com/spreadsheets/d/13NgTUCKgdUuCxeOkawQ1s64bdhMOPMeQT0ZltV-Jniw/edit?usp=sharing", kind: doc }
   status: active
   check: head
   added: 2026-06-12
@@ -124,3 +126,19 @@
   status: active
   check: head
   added: 2026-06-12
+
+- id: stock-dashboard
+  title: 📈 股票資訊看板
+  type: website
+  category: 自動化
+  level: 3
+  platforms: [GitHub Actions, GitHub Pages, Python]
+  summary: 用 GitHub Actions 定時執行 Python 爬蟲,將非結構化股票資料轉成結構化並自動更新看板。
+  description: 示範零成本自動化:GitHub Actions 排程觸發 Python 腳本抓取股票數據,結構化後推回 GitHub Pages 更新看板,後續可串接工作流實現條件通知(如 KD 達標)。
+  tomorrow: 新增 workflow.yml,讓 GitHub Actions 每天自動執行 Python 腳本
+  links:
+    - { label: 開啟看板, url: "https://589411.github.io/stock-dashboard/", kind: open }
+    - { label: 原始碼, url: "https://github.com/589411/stock-dashboard", kind: repo }
+  status: active
+  check: head
+  added: 2026-06-13
