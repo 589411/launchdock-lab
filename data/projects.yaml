@@ -193,3 +193,19 @@
   status: active
   check: head
   added: 2026-06-13
+
+- id: mes-n-mfa
+  title: 🏭 MES + MFA 智慧製造分析
+  type: website
+  category: 資料
+  level: 3
+  platforms: [GitHub Pages, Python]
+  summary: 整合物質流分析與 AI 配方預測，示範製造業數據視覺化與機器學習應用。
+  description: MFA 儀表板即時監控生產線物質流與異常偵測；CCL 配方預測系統以 Random Forest 優化 5G 電子材料配方，前端用 Chart.js 視覺化。
+  tomorrow: 用 AI 預測最佳生產配方
+  links:
+    - { label: 開啟分析台, url: "https://589411.github.io/MESnMFA/", kind: open }
+    - { label: 原始碼, url: "https://github.com/589411/MESnMFA", kind: repo }
+  status: active
+  check: head
+  added: 2026-06-13
