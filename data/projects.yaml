@@ -133,14 +133,15 @@
 
 - id: sdd-learning-guide
   title: 📚 SDD 軟體開發實戰指南
-  type: repo
+  type: website
   category: 教學
   level: 2
-  platforms: [GitHub]
+  platforms: [GitHub Pages]
   summary: 專為非工程師設計的規格驅動開發完整教材，AI 賦能 8 週轉職課程。
   description: 從零開始的規格驅動開發（SDD）教材，涵蓋需求分析、規格書撰寫到 AI 輔助實作，專為想跨入軟體領域的非工程師設計。
   tomorrow: 用 AI 寫出你的第一份軟體規格書
   links:
+    - { label: 開啟教材, url: "https://589411.github.io/SDD-learning-guide/", kind: open }
     - { label: 原始碼, url: "https://github.com/589411/SDD-learning-guide", kind: repo }
   status: active
   check: head
@@ -148,13 +149,14 @@
 
 - id: launchdock-lab
   title: ⚙️ 自動更新網站工作流
-  type: repo
+  type: website
   category: 自動化
   level: 3
   platforms: [GitHub Actions, GitHub Pages]
   summary: 示範 GitHub Actions 自動建置並部署靜態網站，零費用上架流程。
   tomorrow: 打造第一個自動更新的網站
   links:
+    - { label: 開啟網站, url: "https://589411.github.io/launchdock-lab/", kind: open }
     - { label: 原始碼, url: "https://github.com/589411/launchdock-lab", kind: repo }
   status: active
   check: head
@@ -162,7 +164,7 @@
 
 - id: bible-atlas
   title: 🗺️ 聖經像素地圖
-  type: repo
+  type: website
   category: 遊戲
   level: 3
   platforms: [GitHub Pages]
@@ -170,6 +172,7 @@
   description: 仿三國志/大戰略像素風格，幫助華人讀者建立聖經的空間感與時間感，解決閱讀時人名地名混淆的障礙。
   tomorrow: 打造互動式歷史時間軸地圖
   links:
+    - { label: 開啟地圖, url: "https://589411.github.io/bible-atlas/", kind: open }
     - { label: 原始碼, url: "https://github.com/589411/bible-atlas", kind: repo }
   status: active
   check: head
