@@ -28,8 +28,8 @@
   tomorrow: 寫一個 doGet(e) 函式,用 e.parameter 判斷要回傳哪個 HTML 頁面
   qr: true
   links:
-    - { label: 點餐前台, url: "https://script.google.com/macros/s/REPLACE/exec", kind: open }
-    - { label: 廚房後台, url: "https://script.google.com/macros/s/REPLACE/exec?page=kitchen", kind: admin }
+    - { label: 點餐前台, url: "https://script.google.com/macros/s/AKfycbyiwVhh3Xy0pigh51hiz_M3mtnntGWkzLxlzu4yXkKDsR9vygpfLMLVMyVoZKVTUfQ1/exec", kind: open }
+    - { label: 廚房後台, url: "https://script.google.com/macros/s/AKfycbyiwVhh3Xy0pigh51hiz_M3mtnntGWkzLxlzu4yXkKDsR9vygpfLMLVMyVoZKVTUfQ1/exec?page=kitchen", kind: admin }
     - { label: 訂單資料, url: "https://docs.google.com/spreadsheets/d/13NgTUCKgdUuCxeOkawQ1s64bdhMOPMeQT0ZltV-Jniw/edit?usp=sharing", kind: doc }
   status: active
   check: head
