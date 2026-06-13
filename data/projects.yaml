@@ -172,7 +172,7 @@
   description: 仿三國志/大戰略像素風格，幫助華人讀者建立聖經的空間感與時間感，解決閱讀時人名地名混淆的障礙。
   tomorrow: 打造互動式歷史時間軸地圖
   links:
-    - { label: 開啟地圖, url: "https://589411.github.io/bible-atlas/", kind: open }
+    - { label: 開啟地圖, url: "https://atlas.launchdock.app/", kind: open }
     - { label: 原始碼, url: "https://github.com/589411/bible-atlas", kind: repo }
   status: active
   check: head
