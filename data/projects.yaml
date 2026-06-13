@@ -74,7 +74,7 @@
   platforms: [Gemini]
   summary: 四款專業 Gemini Gem:戰略規劃、會議分析、痛點洞察、影音解析。
   description: OGSM 戰略架構師：願景轉為一頁紙戰略計畫。會議洞察提問家：生成深度問題。職場痛點導師：透過對話挖掘工作盲點。影音分析：解析影音重點。
-  tomorrow: 用 AI 顧問幫你解決一個商業問題
+  tomorrow: 將重複的 prompt 打包成為專家模組
   links:
     - { label: OGSM 戰略架構師, url: "https://gemini.google.com/gem/1AgBFELF9PUmXHgDZbdFG5kwhAI_Vc07J?usp=sharing", kind: open }
     - { label: 會議洞察提問家, url: "https://gemini.google.com/gem/07543a322833", kind: open }
@@ -130,6 +130,21 @@
   status: active
   check: head
   added: 2026-06-12
+
+- id: sdd-learning-guide
+  title: 📚 SDD 軟體開發實戰指南
+  type: repo
+  category: 教學
+  level: 2
+  platforms: [GitHub]
+  summary: 專為非工程師設計的規格驅動開發完整教材，AI 賦能 8 週轉職課程。
+  description: 從零開始的規格驅動開發（SDD）教材，涵蓋需求分析、規格書撰寫到 AI 輔助實作，專為想跨入軟體領域的非工程師設計。
+  tomorrow: 用 AI 寫出你的第一份軟體規格書
+  links:
+    - { label: 原始碼, url: "https://github.com/589411/SDD-learning-guide", kind: repo }
+  status: active
+  check: head
+  added: 2026-06-13
 
 - id: stock-dashboard
   title: 📈 股票資訊看板
