@@ -25,7 +25,7 @@
   platforms: [GAS, Google Sheets]
   summary: 同網址加 ?page=kitchen 變廚房後台!示範 GAS 打造完整前後端,資料存 Google Sheet。
   description: 示範 Google 生態全端應用:doGet() 根據網址參數分流畫面,顧客看點餐前台,廚房加 ?page=kitchen 看備餐系統。訂單即時寫入 Google Sheet,零伺服器、零費用。
-  tomorrow: 寫一個 doGet(e) 函式,用 e.parameter 判斷要回傳哪個 HTML 頁面
+  tomorrow: 打造簡易的訂單系統
   qr: true
   links:
     - { label: 點餐前台, url: "https://script.google.com/macros/s/AKfycbyiwVhh3Xy0pigh51hiz_M3mtnntGWkzLxlzu4yXkKDsR9vygpfLMLVMyVoZKVTUfQ1/exec", kind: open }
@@ -42,7 +42,7 @@
   level: 3
   platforms: [GAS, LINE]
   summary: 表單送出後自動推播 LINE 通知,適合社團與小店家。
-  tomorrow: 申請一個 LINE Messaging API channel
+  tomorrow: 讓 LINE 自動幫你推播通知
   qr: true
   links:
     - { label: 加 LINE 體驗, url: "https://lin.ee/REPLACE", kind: line-add }
@@ -67,15 +67,19 @@
   added: 2026-06-13
 
 - id: gemini-meeting-notes
-  title: 📝 會議記錄助手
+  title: 🤖 Gemini Gems 工具組
   type: llm-tool
   category: 寫作
   level: 1
   platforms: [Gemini]
-  summary: 貼上逐字稿,自動產出結構化會議記錄與待辦清單。
-  tomorrow: 把今天的會議錄音丟給 AI 整理一次
+  summary: 四款專業 Gemini Gem:戰略規劃、會議分析、痛點洞察、影音解析。
+  description: OGSM 戰略架構師：願景轉為一頁紙戰略計畫。會議洞察提問家：生成深度問題。職場痛點導師：透過對話挖掘工作盲點。影音分析：解析影音重點。
+  tomorrow: 用 AI 顧問幫你解決一個商業問題
   links:
-    - { label: 啟動工具, url: "https://gemini.google.com/share/REPLACE", kind: open }
+    - { label: OGSM 戰略架構師, url: "https://gemini.google.com/gem/1AgBFELF9PUmXHgDZbdFG5kwhAI_Vc07J?usp=sharing", kind: open }
+    - { label: 會議洞察提問家, url: "https://gemini.google.com/gem/07543a322833", kind: open }
+    - { label: 職場痛點導師, url: "https://gemini.google.com/gem/1IvjyWD1Mj0E9YTrZmNhbjs6ybt4bI7xp?usp=sharing", kind: open }
+    - { label: 影音分析, url: "https://gemini.google.com/gem/1K3BZx_mqHfROhWu7u0CbcsWubmaCCbdL?usp=sharing", kind: open }
   status: active
   check: none
   added: 2026-06-12
@@ -88,7 +92,7 @@
   modules: [M03]
   platforms: [n8n]
   summary: 從主題到發布的半自動文章工作流,人只負責審稿。
-  tomorrow: 安裝 n8n,跑通第一個 webhook 節點
+  tomorrow: 打造自動化文章產線
   links:
     - { label: 看影片, url: "https://youtu.be/REPLACE", kind: video }
   status: active
@@ -114,10 +118,10 @@
   type: website
   category: 生活
   level: 3
-  platforms: [Cloudflare, PWA, LINE]
+  platforms: [Cloudflare, Firebase, LINE, PWA]
   summary: 行動優先的每日讀經站:Firebase 跨裝置同步進度、LINE 分享,可安裝到手機桌面。
-  description: 示範 PWA 安裝、Firebase 跨裝置進度同步(Google 登入)、LINE 分享、深色模式與 Cloudflare 部署。前端純靜態,後端只用 Firebase 免費額度。
-  tomorrow: 幫任何網頁加上 manifest.json,讓它能安裝到手機桌面
+  description: 示範前端靜態站能做多少事：PWA 可安裝到手機桌面、Firebase 跨裝置同步進度（Google 登入）、LINE 一鍵分享、Cloudflare Worker 處理後端邏輯，全跑在免費額度。
+  tomorrow: 把你的網站變成可安裝的手機 App
   qr: true
   links:
     - { label: 開始讀經, url: "https://daily-bread.launchdock.app", kind: open }
@@ -135,7 +139,7 @@
   platforms: [GitHub Actions, GitHub Pages, Python]
   summary: 用 GitHub Actions 定時執行 Python 爬蟲,將非結構化股票資料轉成結構化並自動更新看板。
   description: 示範零成本自動化:GitHub Actions 排程觸發 Python 腳本抓取股票數據,結構化後推回 GitHub Pages 更新看板,後續可串接工作流實現條件通知(如 KD 達標)。
-  tomorrow: 新增 workflow.yml,讓 GitHub Actions 每天自動執行 Python 腳本
+  tomorrow: 打造自動追蹤股票資料的看板
   links:
     - { label: 開啟看板, url: "https://589411.github.io/stock-dashboard/", kind: open }
     - { label: 原始碼, url: "https://github.com/589411/stock-dashboard", kind: repo }

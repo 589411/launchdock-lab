@@ -83,6 +83,12 @@
 
 **check 的原理**:Notion、Gemini share、AI Studio 即使內容已死也常回 200,機器檢查無意義,所以設 `none`,靠人工巡檢。能可靠用 HTTP 檢查的才設 `head`。
 
+### platforms 與 description 的分工
+
+- **`platforms` 標籤**:只列「學員需要申請或學習的核心平台」,3–5 個為限。讓學員一眼知道這個專案用到哪些工具。
+- **`description`**:說明這些技術怎麼串在一起、有趣之處在哪。非核心的 API 或技術細節放這裡提即可,不需進 platforms。
+- 判斷原則:「學員做這個專案,一定要碰到這個平台嗎?」→ 是 → 進 platforms;否 → 在 description 提一句就好。
+
 ## 各類型範例(新增時照抄改值)
 
 ```yaml
