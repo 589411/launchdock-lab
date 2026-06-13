@@ -148,7 +148,7 @@
   added: 2026-06-13
 
 - id: launchdock-lab
-  title: ⚙️ 自動更新網站工作流
+  title: ⚙️ 藍鴨實驗室
   type: website
   category: 自動化
   level: 3
@@ -156,7 +156,7 @@
   summary: 示範 GitHub Actions 自動建置並部署靜態網站，零費用上架流程。
   tomorrow: 打造第一個自動更新的網站
   links:
-    - { label: 開啟網站, url: "https://589411.github.io/launchdock-lab/", kind: open }
+    - { label: 開啟網站, url: "https://lab.launchdock.app", kind: open }
     - { label: 原始碼, url: "https://github.com/589411/launchdock-lab", kind: repo }
   status: active
   check: head
