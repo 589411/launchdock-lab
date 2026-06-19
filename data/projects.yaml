@@ -7,7 +7,7 @@
   type: website
   category: 教學
   level: 3
-  modules: [M03]
+  modules: [M02]
   platforms: [Cloudflare, GitHub]
   summary: 半自動內容產線:GitHub 發布、Cloudflare 部署的教學內容站。
   tomorrow: 用 GitHub Pages 免費發布你的第一個網頁
@@ -22,6 +22,7 @@
   type: gas-webapp
   category: 自動化
   level: 3
+  modules: [M03, M04]
   platforms: [GAS, Google Sheets]
   summary: 同網址加 ?page=kitchen 變廚房後台!示範 GAS 打造完整前後端,資料存 Google Sheet。
   description: 示範 Google 生態全端應用:doGet() 根據網址參數分流畫面,顧客看點餐前台,廚房加 ?page=kitchen 看備餐系統。訂單即時寫入 Google Sheet,零伺服器、零費用。
@@ -40,6 +41,7 @@
   type: gas-line
   category: 自動化
   level: 3
+  modules: [M04, M03]
   platforms: [GAS, LINE]
   summary: 表單送出後自動推播 LINE 通知,適合社團與小店家。
   tomorrow: 讓 LINE 自動幫你推播通知
@@ -56,6 +58,7 @@
   type: notion-template
   category: 自動化
   level: 2
+  modules: [M06]
   platforms: [Notion]
   summary: 專為新拓植與小型教會設計的行政管理模板，提升日常運作效率。資料為 AI 生成的模擬數據。
   description: 特別針對新拓植的教會、小型教會提供完整行政管理模板，涵蓋成員管理、活動規劃、財務追蹤等，所有範例資料均為 AI 生成的模擬數據。
@@ -71,6 +74,7 @@
   type: llm-tool
   category: 寫作
   level: 1
+  modules: [M01]
   platforms: [Gemini]
   summary: 四款專業 Gemini Gem:戰略規劃、會議分析、痛點洞察、影音解析。
   description: OGSM 戰略架構師：願景轉為一頁紙戰略計畫。會議洞察提問家：生成深度問題。職場痛點導師：透過對話挖掘工作盲點。影音分析：解析影音重點。
@@ -89,7 +93,7 @@
   type: n8n-workflow
   category: 自動化
   level: 3
-  modules: [M03]
+  modules: [M05]
   platforms: [n8n]
   summary: 從主題到發布的半自動文章工作流,人只負責審稿。
   tomorrow: 打造自動化文章產線
@@ -104,6 +108,7 @@
   type: repo
   category: 自動化
   level: 3
+  modules: [M05, M04]
   platforms: [GitHub Actions, LINE]
   summary: 用 GitHub Issues 當指令台的多代理自動化系統,跑在免費額度上。
   tomorrow: 在任一 repo 開一個 Issue,寫下你想自動化的一件事
@@ -118,6 +123,7 @@
   type: website
   category: 生活
   level: 3
+  modules: [M08, M04, M02]
   platforms: [Cloudflare, Firebase, LINE, PWA]
   summary: 行動優先的每日讀經站:Firebase 跨裝置同步進度、LINE 分享,可安裝到手機桌面。
   description: 示範前端靜態站能做多少事：PWA 可安裝到手機桌面、Firebase 跨裝置同步進度（Google 登入）、LINE 一鍵分享、Cloudflare Worker 處理後端邏輯，全跑在免費額度。
@@ -136,6 +142,7 @@
   type: website
   category: 教學
   level: 2
+  modules: [M02]
   platforms: [GitHub Pages]
   summary: 專為非工程師設計的規格驅動開發完整教材，AI 賦能 8 週轉職課程。
   description: 從零開始的規格驅動開發（SDD）教材，涵蓋需求分析、規格書撰寫到 AI 輔助實作，專為想跨入軟體領域的非工程師設計。
@@ -152,6 +159,7 @@
   type: website
   category: 自動化
   level: 3
+  modules: [M05, M02]
   platforms: [GitHub Actions, GitHub Pages]
   summary: 示範 GitHub Actions 自動建置並部署靜態網站，零費用上架流程。
   tomorrow: 打造第一個自動更新的網站
@@ -167,6 +175,7 @@
   type: website
   category: 遊戲
   level: 3
+  modules: [M02]
   platforms: [GitHub Pages]
   summary: 復古戰略遊戲風格的聖經歷史地圖，以「時代」為座標解決人名地名混淆。
   description: 仿三國志/大戰略像素風格，幫助華人讀者建立聖經的空間感與時間感，解決閱讀時人名地名混淆的障礙。
@@ -183,6 +192,7 @@
   type: website
   category: 自動化
   level: 3
+  modules: [M05, M07, M02]
   platforms: [GitHub Actions, GitHub Pages, Python]
   summary: 用 GitHub Actions 定時執行 Python 爬蟲,將非結構化股票資料轉成結構化並自動更新看板。
   description: 示範零成本自動化:GitHub Actions 排程觸發 Python 腳本抓取股票數據,結構化後推回 GitHub Pages 更新看板,後續可串接工作流實現條件通知(如 KD 達標)。
@@ -199,6 +209,7 @@
   type: website
   category: 資料
   level: 3
+  modules: [M07]
   platforms: [GitHub Pages, Python]
   summary: 整合物質流分析與 AI 配方預測，示範製造業數據視覺化與機器學習應用。
   description: MFA 儀表板即時監控生產線物質流與異常偵測；CCL 配方預測系統以 Random Forest 優化 5G 電子材料配方，前端用 Chart.js 視覺化。

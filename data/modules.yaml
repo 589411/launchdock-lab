@@ -1,0 +1,68 @@
+# Launchdock Lab — 教學模組地圖 v3
+# 與 Joseph 共同 review 定稿（2026-06-19）。
+#
+# 設計原則：
+#   - 主軸 = 能力／主題（耐久），不是平台（會換）。
+#   - 每個主題底下有兩種產物：
+#       概念品/demo（教學用，學生快速做得出）→ 進 lab(projects.yaml)
+#       工具/skill（複用用，封裝重複動作）   → 進 skills，lab 用連結指過去
+#   - 同一 demo 可掛多個模組（modules 為陣列）；分組呈現時可指定主模組。
+#   - 既有欄位分工：category=主題篩選、level=難度(1提示詞/2範本/3工作流)、modules=教學單元。
+#
+# 邊界決議（本次 review）：
+#   - M02 前端發布 vs M08 後端服務：分開（前端應用面廣；後端較難較乏味，正好交給 LLM）。
+#   - Firebase 歸後端 → M08（不放 M03）。
+#   - Gems / GPTs 視為「模組化的 prompt」→ M01（不放 M03）；Gemini API 開發才歸 M03。
+#   - M05 的「RPA」是教學主題；「打造 LLM 原生 RPA 工具」是建構支線，見 dev-harness/IDEAS.md。
+
+- id: M01
+  title: AI／Agent 核心概念與技巧
+  goal: 平台無關地用與建 AI：提示工程、Skill、MCP、harness、loop、agent 設計
+  note: 刻意持續更新，跟著前沿走（概念為主，素材會隨課程長出來）
+  example_demos: [Gemini Gems 工具組]   # Gems/GPTs = 模組化 prompt
+
+- id: M02
+  title: 靜態網站與發布
+  goal: 把前端應用上線：GitHub Pages、Cloudflare Pages、自訂網域、PWA
+  skills: [static-site-deploy, pwa-offline]
+  example_demos: [藍鴨官網, SDD 軟體開發實戰指南, 聖經像素地圖]
+
+- id: M03
+  title: Google 生態應用
+  goal: 用 Google 全家桶做應用：GAS、Sheets／Workspace 自動化、Gemini API
+  example_demos: [初原麵場點餐系統]
+
+- id: M04
+  title: 訊息平台整合與推播
+  goal: 串訊息平台做 Bot 與通知：LINE、Telegram、（Slack／Discord）
+  skills: [line-daily-push]
+  example_demos: [LINE 自動推播, GitHub 小龍蝦, 每日靈糧]
+
+- id: M05
+  title: 自動化工作流與 RPA
+  goal: 串流程、免人工：n8n、make.com、GitHub Actions、RPA 自動抓數據
+  note: RPA 為教學主題；LLM 原生 RPA 工具的建構見 dev-harness/IDEAS.md
+  example_demos: [文章自動產線, 藍鴨實驗室, 股票資訊看板]
+
+- id: M06
+  title: 知識管理與團隊協作
+  goal: 個人知識庫＋多人共筆／共同任務：Notion、Obsidian、Slack
+  example_demos: [智慧型教會營運系統]
+
+- id: M07
+  title: 資料分析與視覺化
+  goal: 把資料變洞察與看板：Python、BI
+  skills: [lucid-bi]
+  example_demos: [MES + MFA 智慧製造分析, 股票資訊看板]
+
+- id: M08
+  title: 雲端服務與後端
+  goal: 後端能力：託管、資料庫、serverless、認證（Cloudflare Workers／KV、Firebase、GitHub、Google Cloud）
+  skills: [firebase-web-sync]
+  example_demos: [每日靈糧]
+
+- id: M09
+  title: AI 內容與多媒體生成
+  goal: 生成文章與多媒體：FB／IG 貼文、圖片、音樂、影片
+  note: 新方向，素材待長出 demo
+  example_demos: []
