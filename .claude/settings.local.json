@@ -13,7 +13,14 @@
       "Bash(brew list *)",
       "Bash(python3.11 *)",
       "Bash(pip3.11 install *)",
-      "Bash(gh run *)"
+      "Bash(gh run *)",
+      "WebFetch(domain:589411.github.io)",
+      "WebFetch(domain:atlas.launchdock.app)",
+      "Bash(gh repo *)",
+      "Bash(git -C /Users/joseph/github/launchdock-lab log --oneline -3)",
+      "Bash(git -C /Users/joseph/github/launchdock-lab add assets/covers/gas-ordering.png)",
+      "Bash(git -C /Users/joseph/github/launchdock-lab commit -m ' *)",
+      "Bash(git -C /Users/joseph/github/launchdock-lab push)"
     ]
   }
 }
