@@ -220,3 +220,22 @@
   status: active
   check: head
   added: 2026-06-13
+
+- id: legal-ai-agent-workshop
+  title: ⚖️ 法律事務所 AI Agent 實戰課
+  type: website
+  category: 教學
+  level: 3
+  modules: [M01, M02, M05]
+  platforms: [GitHub Pages, Remotion]
+  summary: 互動簡報結合法律工作台 Demo，示範可審核的 AI Agent 工作流。
+  description: 以模擬法律事務所串起法律資料雷達、LINE 排程、工時彙整與帳單草稿，明確標示人工確認、保密與權限邊界。
+  tomorrow: 選一個重複行政流程，標出 AI 執行與人工確認節點
+  qr: true
+  links:
+    - { label: 開啟簡報, url: "https://589411.github.io/legal-ai-agent-workshop/presentation/", kind: open }
+    - { label: 互動工作台, url: "https://589411.github.io/legal-ai-agent-workshop/", kind: open }
+    - { label: 原始碼, url: "https://github.com/589411/legal-ai-agent-workshop", kind: repo }
+  status: active
+  check: head
+  added: 2026-06-25
