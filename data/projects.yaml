@@ -246,8 +246,8 @@
   category: 圖片
   level: 1
   platforms: [Cloudflare, GitHub]
-  summary: 親子填空就能召喚 AI 生圖提示詞，含電影分鏡與名畫填空模板。
-  description: 四種模式：小小孩可愛風、大小孩酷炫奇幻、大人電影分鏡、填空模板。一鍵把想法擴寫成中英提示詞貼到 Gemini／ChatGPT 生圖，也能上傳照片讓 AI 看圖建議改造。
+  summary: 親子填空就召喚 AI 生圖提示詞，含電影分鏡與中英雙語模板庫。
+  description: 四種模式：小小孩可愛、大小孩酷炫奇幻、大人電影分鏡，以及填空模板庫（17 模板＋61 詞庫、中英雙語、分類搜尋）。一鍵擴寫成中英提示詞貼到 Gemini／ChatGPT 生圖，也能上傳照片讓 AI 看圖建議改造。
   tomorrow: 用填空法寫出你的第一個 AI 生圖提示詞
   qr: true
   links:
