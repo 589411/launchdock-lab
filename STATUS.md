@@ -28,3 +28,5 @@
 ## 已知坑
 - 只改 data/ 與 assets/covers/，dist/ 是產物。改完必跑 validate.py。
 - `.DS_Store` 不該進 git，建議加進 .gitignore。
+- **covers 工作流截圖後封面不會自動上線**：它用 Actions 內建 `GITHUB_TOKEN` commit/push，不觸發 deploy.yml（GitHub 防遞迴），dist 不重建、線上仍是舊 SVG 佔位圖。解法：`gh workflow run covers.yml -f force_id=<id>` 完成後，再 `gh workflow run deploy.yml` 手動重建。
+- **帳號**：repo 屬 GitHub `589411`；本機 gh active 常是 `launchdockapp-beep`，push/dispatch 前先 `gh auth switch --user 589411`，完再切回。
