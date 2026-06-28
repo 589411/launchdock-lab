@@ -239,3 +239,20 @@
   status: active
   check: head
   added: 2026-06-25
+
+- id: prompt-magic
+  title: ✨ 魔法詠唱產生器
+  type: llm-tool
+  category: 圖片
+  level: 1
+  platforms: [Cloudflare, GitHub]
+  summary: 親子填空就能召喚 AI 生圖提示詞，含電影分鏡與名畫填空模板。
+  description: 四種模式：小小孩可愛風、大小孩酷炫奇幻、大人電影分鏡、填空模板。一鍵把想法擴寫成中英提示詞貼到 Gemini／ChatGPT 生圖，也能上傳照片讓 AI 看圖建議改造。
+  tomorrow: 用填空法寫出你的第一個 AI 生圖提示詞
+  qr: true
+  links:
+    - { label: 開啟工具, url: "https://prompt-magic.launchdock.app", kind: open }
+    - { label: 原始碼, url: "https://github.com/589411/prompt-magic", kind: repo }
+  status: active
+  check: none
+  added: 2026-06-28
