@@ -49,7 +49,7 @@
   links:
     - { label: 加 LINE 體驗, url: "https://lin.ee/REPLACE", kind: line-add }
     - { label: 看影片, url: "https://youtu.be/REPLACE", kind: video }
-  status: active
+  status: archived   # 2026-07-05 連結仍為 REPLACE 佔位符,補上實際 URL 後改回 active(validate.py 會擋)
   check: none
   added: 2026-06-12
 
@@ -99,7 +99,7 @@
   tomorrow: 打造自動化文章產線
   links:
     - { label: 看影片, url: "https://youtu.be/REPLACE", kind: video }
-  status: active
+  status: archived   # 2026-07-05 連結仍為 REPLACE 佔位符,補上實際 URL 後改回 active(validate.py 會擋)
   check: none
   added: 2026-06-12
 
@@ -114,7 +114,7 @@
   tomorrow: 在任一 repo 開一個 Issue,寫下你想自動化的一件事
   links:
     - { label: 原始碼, url: "https://github.com/REPLACE/openclaw", kind: repo }
-  status: active
+  status: archived   # 2026-07-05 連結仍為 REPLACE 佔位符,補上實際 URL 後改回 active(validate.py 會擋)
   check: none
   added: 2026-06-12
 

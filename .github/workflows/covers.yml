@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # 截圖 commit 後需手動觸發 deploy(GITHUB_TOKEN push 不會觸發 push workflow)
 
 jobs:
   covers:
@@ -32,9 +33,22 @@ jobs:
             python scripts/screenshot.py
           fi
       - name: Commit new covers
+        id: commit
         run: |
           git config user.name "lab-bot"
           git config user.email "bot@users.noreply.github.com"
           git add assets/covers
-          git diff --cached --quiet || git commit -m "covers: auto screenshot"
-          git push
+          if git diff --cached --quiet; then
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "covers: auto screenshot"
+            git push
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
+          fi
+      # GitHub 防遞迴:GITHUB_TOKEN 的 push 不會觸發 deploy.yml,
+      # 導致線上一直是舊佔位圖。改用 workflow_dispatch 顯式觸發重建。
+      - name: Trigger deploy
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main

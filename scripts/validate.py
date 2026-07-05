@@ -42,6 +42,16 @@ def main() -> int:
             if not (COVERS / p["cover"]).is_file():
                 errors.append(f"[cover] {p.get('id')}: assets/covers/{p['cover']} 不存在")
 
+    # active 條目不得殘留佔位符連結(REPLACE)——曾有 3 筆 active 條目掛著
+    # lin.ee/REPLACE 等死連結上線,且因 check: none 逃過週檢,故列硬錯誤
+    for p in projects:
+        if not isinstance(p, dict) or p.get("status") != "active":
+            continue
+        for l in p.get("links", []):
+            if isinstance(l, dict) and "REPLACE" in str(l.get("url", "")):
+                errors.append(f"[placeholder] {p.get('id')}: 連結含 REPLACE 佔位符,"
+                              f"請填實際 URL 或先把 status 改為 archived")
+
     # 類型與連結的搭配建議(警告不擋)
     warn = []
     for p in projects:
