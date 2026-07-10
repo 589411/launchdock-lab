@@ -256,3 +256,20 @@
   status: active
   check: none
   added: 2026-06-28
+
+- id: masters-hub
+  title: 🎓 大師專家團
+  type: llm-tool
+  category: 教學
+  level: 1
+  platforms: [Gemini, ChatGPT]
+  summary: 22 位管理與行銷大師打包成 Gem／GPT，依任務挑一組專家，點了就用。
+  description: 顧客洞察、定價策略、品牌行銷、談判說服、組織領導五大主題包，每包 3–10 位大師（Kotler、Christensen、Nagle、Aaker、Cialdini、Drucker、Sinek…）。每位都有 Gemini Gem（免費）與 ChatGPT GPT 兩版，另附 3 顆職場實用工具。
+  tomorrow: 挑一個你正在面對的任務，開一位大師貼上你的資料
+  qr: true
+  links:
+    - { label: 開啟 Hub, url: "https://masters.launchdock.app", kind: open }
+    - { label: 原始碼, url: "https://github.com/589411/masters-hub", kind: repo }
+  status: active
+  check: none
+  added: 2026-07-10
