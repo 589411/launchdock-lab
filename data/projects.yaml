@@ -273,3 +273,20 @@
   status: active
   check: none
   added: 2026-07-10
+
+- id: swing-lab
+  title: 🥁 SWING LAB 爵士鼓節奏訓練場
+  type: website
+  category: 遊戲
+  level: 2
+  platforms: [Firebase, GitHub, Cloudflare]
+  summary: 用麥克風偵測打擊、自動校準系統延遲，跟拍計分練穩你的節奏感。
+  description: 三步驟：先量測環境噪音設定門檻，再跟 12 下喀噠聲打拍校準系統延遲，最後給出你的節奏準度。支援麥克風打擊或點擊／空白鍵兩種模式，多學生切換＋同步碼可跨裝置保留練習紀錄。
+  tomorrow: 戴上耳機，跟著節拍器打 12 下測出你的節奏準度
+  qr: true
+  links:
+    - { label: 開啟訓練場, url: "https://swing.launchdock.app", kind: open }
+    - { label: 原始碼, url: "https://github.com/589411/swing-lab", kind: repo }
+  status: active
+  check: head
+  added: 2026-07-12
