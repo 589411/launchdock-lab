@@ -1,7 +1,7 @@
 # STATUS — launchdock-lab
 
 > 單一真相。每次離開前更新（全域憲法收尾鐵律）。
-**最後更新：** 2026-07-05
+**最後更新：** 2026-07-12
 **整體狀態：** 🟢 進行中
 
 ## 一句話現況
@@ -19,6 +19,7 @@
 - gas-line-push 的 LINE 官方帳號連結與影片、n8n-article-pipeline 的影片、openclaw 的公開 repo URL——只有你有。
 
 ## 進度脈絡（新的在上）
+- 2026-07-12 新增 swing-lab（🥁 爵士鼓節奏訓練場，website/遊戲/L2，swing.launchdock.app）；deploy 成功、卡片已上線
 - 2026-07-05 修 covers.yml：截圖 commit 後自動 `gh workflow run deploy.yml`（解防遞迴死結）
 - 2026-07-05 validate.py 新增 REPLACE 佔位符硬檢查；3 筆佔位條目暫轉 archived
 - 2026-07-05 建 `.claude/skills/lab-publish/`（README 宣稱已久但一直不存在）
