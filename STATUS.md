@@ -19,6 +19,7 @@
 - gas-line-push 的 LINE 官方帳號連結與影片、n8n-article-pipeline 的影片、openclaw 的公開 repo URL——只有你有。
 
 ## 進度脈絡（新的在上）
+- 2026-07-19 header 加「← 回藍鴨 Launchdock 主站」導流 pill（templates/page.html）；push 後 CI 重建 dist 上線
 - 2026-07-12 新增 swing-lab（🥁 爵士鼓節奏訓練場，website/遊戲/L2，swing.launchdock.app）；deploy 成功、卡片已上線
 - 2026-07-05 修 covers.yml：截圖 commit 後自動 `gh workflow run deploy.yml`（解防遞迴死結）
 - 2026-07-05 validate.py 新增 REPLACE 佔位符硬檢查；3 筆佔位條目暫轉 archived
