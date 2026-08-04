@@ -1,7 +1,7 @@
 # STATUS — launchdock-lab
 
 > 單一真相。每次離開前更新（全域憲法收尾鐵律）。
-**最後更新：** 2026-07-12
+**最後更新：** 2026-08-04
 **整體狀態：** 🟢 進行中
 
 ## 一句話現況
@@ -19,6 +19,7 @@
 - gas-line-push 的 LINE 官方帳號連結與影片、n8n-article-pipeline 的影片、openclaw 的公開 repo URL——只有你有。
 
 ## 進度脈絡（新的在上）
+- 2026-08-04 新增 sunlit-retail（🌤 日晴生活，website/資料/L2，sunlit.launchdock.app）；工研院課程教學範例，含模擬後台匯出動線。validate 18 筆通過、已 push
 - 2026-07-19 header 加「← 回藍鴨 Launchdock 主站」導流 pill（templates/page.html）；push 後 CI 重建 dist 上線
 - 2026-07-12 新增 swing-lab（🥁 爵士鼓節奏訓練場，website/遊戲/L2，swing.launchdock.app）；deploy 成功、卡片已上線
 - 2026-07-05 修 covers.yml：截圖 commit 後自動 `gh workflow run deploy.yml`（解防遞迴死結）
