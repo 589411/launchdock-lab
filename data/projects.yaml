@@ -290,3 +290,26 @@
   status: active
   check: head
   added: 2026-07-12
+- id: sunlit-retail
+  title: '🌤 日晴生活 — 挖一家店的資料'
+  type: website
+  category: 資料
+  level: 2
+  platforms: ['GitHub', 'Cloudflare']
+  summary: '[工研院課程] 消費行為洞察與預測實戰班 — 教學範例'
+  description: '虛構選物店的官網＋18 個月營運資料。從模擬後台匯出 CRM／POS／ERP 的 CSV，丟給你的 LLM，親手挖出藏在髒資料裡的洞察。'
+  tomorrow: '匯出 members.csv 給 LLM 做 EDA，看它漏掉什麼'
+  qr: true
+  links:
+    - label: '逛官網'
+      url: 'https://sunlit.launchdock.app'
+      kind: open
+    - label: '模擬後台'
+      url: 'https://sunlit.launchdock.app/admin/'
+      kind: admin
+    - label: '原始碼'
+      url: 'https://github.com/589411/sunlit-site'
+      kind: repo
+  status: active
+  check: head
+  added: 2026-08-04
