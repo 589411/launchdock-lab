@@ -1,7 +1,7 @@
 # STATUS — launchdock-lab
 
 > 單一真相。每次離開前更新（全域憲法收尾鐵律）。
-**最後更新：** 2026-08-04
+**最後更新：** 2026-08-15
 **整體狀態：** 🟢 進行中
 
 ## 一句話現況
@@ -13,12 +13,13 @@
 填實際 URL 後把 status 改回 active。validate.py 現在會硬擋 active 條目的 REPLACE。
 
 ## 怎麼驗證這一步成功
-`python scripts/validate.py` 通過且 active 數回到 15；push 後 lab.launchdock.app 卡片恢復。
+`python3 scripts/validate.py` 通過且 active 數從 16 回到 19；push 後 lab.launchdock.app 卡片恢復。
 
 ## 卡點 / 待你決定
 - gas-line-push 的 LINE 官方帳號連結與影片、n8n-article-pipeline 的影片、openclaw 的公開 repo URL——只有你有。
 
 ## 進度脈絡（新的在上）
+- 2026-08-15 新增 violin-lesson-analyse（🎻 女兒的小提琴課，repo/生活/L3，M05+M01）；封面用演講簡報 slide-5。validate 19 筆通過、deploy 成功、卡片與封面已上線（16 張卡）
 - 2026-08-04 新增 sunlit-retail（🌤 日晴生活，website/資料/L2，sunlit.launchdock.app）；工研院課程教學範例，含模擬後台匯出動線。validate 18 筆通過、已 push
 - 2026-07-19 header 加「← 回藍鴨 Launchdock 主站」導流 pill（templates/page.html）；push 後 CI 重建 dist 上線
 - 2026-07-12 新增 swing-lab（🥁 爵士鼓節奏訓練場，website/遊戲/L2，swing.launchdock.app）；deploy 成功、卡片已上線
