@@ -20,7 +20,9 @@
 
 ## 進度脈絡（新的在上）
 - 2026-08-15 新增 violin-lesson-analyse（🎻 女兒的小提琴課，repo/生活/L3，M05+M01）；封面用演講簡報 slide-5，壓成 webp 59KB（原 PNG 1005KB）。validate 19 筆通過、deploy 成功、卡片與封面已上線（16 張卡）
-  - 慣例：封面圖一律先壓再進 repo（`cwebp -q 82` 約 60–120KB）。既有封面最大 gas-ordering.png 6.3MB，有空可一併壓
+- 2026-08-15 全部封面轉 webp：14.5MB → 1.8MB（-88%，`cwebp -q 85`，尺寸不變、文字無糊化）。deploy 成功、14 張封面線上實測 200
+  - 慣例：**封面圖一律先壓成 webp 再進 repo**（`cwebp -q 85`，約 50–200KB）。換副檔名時舊檔要 `git rm`，否則 repo 留兩份
+  - screenshot.py 的 `has_cover()` 已認得 .webp，Auto Covers 不會把 PNG 補回來
 - 2026-08-04 新增 sunlit-retail（🌤 日晴生活，website/資料/L2，sunlit.launchdock.app）；工研院課程教學範例，含模擬後台匯出動線。validate 18 筆通過、已 push
 - 2026-07-19 header 加「← 回藍鴨 Launchdock 主站」導流 pill（templates/page.html）；push 後 CI 重建 dist 上線
 - 2026-07-12 新增 swing-lab（🥁 爵士鼓節奏訓練場，website/遊戲/L2，swing.launchdock.app）；deploy 成功、卡片已上線
