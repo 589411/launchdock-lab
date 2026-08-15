@@ -313,3 +313,20 @@
   status: active
   check: head
   added: 2026-08-04
+- id: violin-lesson-analyse
+  title: '🎻 女兒的小提琴課 — 錄影自動筆記'
+  type: repo
+  category: 生活
+  level: 3
+  modules: [M05, M01]
+  platforms: ['Whisper', 'Claude API', 'ffmpeg']
+  summary: '上課錄影自動轉逐字稿、萃取重點筆記、分段，產出練習用跳段播放器。'
+  description: '錄了那麼多支，一支都沒再打開過。抽音訊 → mlx-whisper 本地轉錄 → Claude 萃取老師反覆強調的重點與回家作業 → 依語意自動分章 → 產出 practice.html 跳段播放器。影片全程留在本機。'
+  tomorrow: '把最近一支上課錄影丟給 Whisper 轉成逐字稿'
+  links:
+    - label: '原始碼'
+      url: 'https://github.com/589411/violin-lesson-analyse'
+      kind: repo
+  status: active
+  check: head
+  added: 2026-08-15
