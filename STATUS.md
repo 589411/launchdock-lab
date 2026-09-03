@@ -1,7 +1,7 @@
 # STATUS — launchdock-lab
 
 > 單一真相。每次離開前更新（全域憲法收尾鐵律）。
-**最後更新：** 2026-08-15
+**最後更新：** 2026-09-03
 **整體狀態：** 🟢 進行中
 
 ## 一句話現況
@@ -19,6 +19,7 @@
 - gas-line-push 的 LINE 官方帳號連結與影片、n8n-article-pipeline 的影片、openclaw 的公開 repo URL——只有你有。
 
 ## 進度脈絡（新的在上）
+- 2026-09-03 新增 story-pipeline-spec（🎬 故事拆短片 — 可稽核的生成流程規格，repo/自動化/L3，M09+M01）；**M09（AI 內容與多媒體生成）的第一筆 demo**，此前 example_demos 是空的。封面是照該規格實跑 U-108 產出的四張劇照 2×2（同一角色跨四鏡，外型隨敘事改變但臉沒變），1600x900 webp 201KB。validate 20 筆通過、deploy success、線上實測卡片與封面皆 200
 - 2026-08-15 新增 violin-lesson-analyse（🎻 女兒的小提琴課，repo/生活/L3，M05+M01）；封面用演講簡報 slide-5，壓成 webp 59KB（原 PNG 1005KB）。validate 19 筆通過、deploy 成功、卡片與封面已上線（16 張卡）
 - 2026-08-15 全部封面轉 webp：14.5MB → 1.8MB（-88%，`cwebp -q 85`，尺寸不變、文字無糊化）。deploy 成功、14 張封面線上實測 200
   - 慣例：**封面圖一律先壓成 webp 再進 repo**（`cwebp -q 85`，約 50–200KB）。換副檔名時舊檔要 `git rm`，否則 repo 留兩份
