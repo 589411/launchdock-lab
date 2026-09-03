@@ -330,3 +330,20 @@
   status: active
   check: head
   added: 2026-08-15
+- id: story-pipeline-spec
+  title: '🎬 故事拆短片 — 可稽核的生成流程規格'
+  type: repo
+  category: 自動化
+  level: 3
+  modules: [M09, M01]
+  platforms: ['Claude Code', 'Python']
+  summary: '把故事拆成一集集短片的流程規格：九個單元各有中間檔，壞了知道回哪一步修。'
+  description: '多數人做 AI 影片是「一鍋反應到底」，結果不好只能整鍋重來，還說不出哪裡不對。這裡把流程拆成九個單元，中間產物是三份 JSON：節拍表、角色設定表、集切分。生圖 prompt 由程式從這三份「組」出來，不是手寫——改一次主角髮色，所有分鏡同步更新。封面四張圖就是照這套跑出來的。'
+  tomorrow: '把手上的故事切成節拍表，先不要生任何一張圖'
+  links:
+    - label: '原始碼'
+      url: 'https://github.com/589411/story-pipeline-spec'
+      kind: repo
+  status: active
+  check: head
+  added: 2026-09-03
