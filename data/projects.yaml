@@ -351,11 +351,11 @@
   title: '🎧 Hey-O! 英聽口說'
   type: website
   category: 教學
-  level: 2
-  modules: [M02, M01]
-  platforms: ['GitHub', 'Cloudflare', 'YouTube']
-  summary: '用 YouTube 聖經動畫練英聽與口說：逐句跟讀自動評分、聽寫批改、生字閃卡。'
-  description: '把 YouTube 影片變成英文課：抓真實字幕逐字時間，一句一句對齊，點句子就從那裡播。跟讀時語音辨識逐字標出說對說錯並打分，聽寫打完逐字批改，生字收進生字本用閃卡複習。也是一個反例教材：Gemini 給的草稿影片 ID 和時間碼都是編的，全部用真資料重做。'
+  level: 3
+  modules: [M02, M09, M01]
+  platforms: ['GitHub', 'Cloudflare', 'YouTube', 'Antigravity']
+  summary: '用 YouTube 影片練英聽口說：四級難度從兒童動畫到真實講道，逐句跟讀評分、聽寫、生字閃卡。'
+  description: '四個系列由淺入深：Hey-O 聖經動畫 → 每日靈修 → 葛理翰講道 → Bill Johnson 講道。課程由流水線批次產生：yt-dlp 抓真字幕、agy 斷句翻譯選字、程式驗證吻合度才上架，長講道依章節自動切段。抓取交給工具、理解交給 LLM、把關交給程式。'
   tomorrow: '挑一支喜歡的 YouTube 影片，一天跟讀三句、錄下自己的聲音比對'
   qr: true
   links:
