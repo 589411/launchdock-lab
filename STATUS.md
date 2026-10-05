@@ -19,6 +19,7 @@
 - gas-line-push 的 LINE 官方帳號連結與影片、n8n-article-pipeline 的影片、openclaw 的公開 repo URL——只有你有。
 
 ## 進度脈絡（新的在上）
+- 2026-10-05 hey-o-english 文案改為四級系列＋agy 流水線（level 2→3、modules 加 M09、platforms 加 Antigravity）；刪舊封面讓 Auto Covers 重截四級版首頁，轉 webp。
 - 2026-10-05 新增 hey-o-english（🎧 Hey-O! 英聽口說，website/教學/L2，M02+M01，hey-o.launchdock.app）；Auto Covers 截圖後轉 webp 210KB、刪 PNG。validate 21 筆通過、deploy success、線上卡片與 `/covers/hey-o-english.webp` 皆 200（注意封面線上路徑是 `/covers/` 不是 `/assets/covers/`）
 - 2026-09-03 新增 story-pipeline-spec（🎬 故事拆短片 — 可稽核的生成流程規格，repo/自動化/L3，M09+M01）；**M09（AI 內容與多媒體生成）的第一筆 demo**，此前 example_demos 是空的。封面是照該規格實跑 U-108 產出的四張劇照 2×2（同一角色跨四鏡，外型隨敘事改變但臉沒變），1600x900 webp 201KB。validate 20 筆通過、deploy success、線上實測卡片與封面皆 200
 - 2026-08-15 新增 violin-lesson-analyse（🎻 女兒的小提琴課，repo/生活/L3，M05+M01）；封面用演講簡報 slide-5，壓成 webp 59KB（原 PNG 1005KB）。validate 19 筆通過、deploy 成功、卡片與封面已上線（16 張卡）
