@@ -1,12 +1,12 @@
 # STATUS — launchdock-lab
 
 > 單一真相。每次離開前更新（全域憲法收尾鐵律）。
-**最後更新：** 2026-10-05
+**最後更新：** 2026-10-10
 **整體狀態：** 🟢 進行中
 
 ## 一句話現況
 課堂 AI 實例庫（資料驅動）。modules.yaml v3（M01–M09）已定稿；主站文章已可掛 `modules` 欄位並用
-`npm run handout M0x` 抽組講義（講義線已打通）。covers 部署死結已修。
+`npm run handout M0x` 抽組講義（講義線已打通）。covers 部署死結已修。**2026-10-10 起有英文版 lab.launchdock.app/en/**（同一份 yaml、條目 `en` 區塊）。
 
 ## 下一個具體動作 ⭐
 補回 3 筆因 REPLACE 佔位符被 archived 的條目連結（gas-line-push、n8n-article-pipeline、openclaw），
@@ -19,6 +19,8 @@
 - gas-line-push 的 LINE 官方帳號連結與影片、n8n-article-pipeline 的影片、openclaw 的公開 repo URL——只有你有。
 
 ## 進度脈絡（新的在上）
+- 2026-10-10 **英文版上線** `/en/`：projects.yaml 每筆加選填 `en`（title/summary/description/tomorrow/labels，18 筆 active 全補）；build.py 同時產 `dist/index.html` 與 `dist/en/index.html`，缺 en 退回中文；模板文字改 `{{佔位}}`＋右上中英切換＋hreflang；validate 檢 labels 數＝links 數、缺 en 警告；CLAUDE.md／lab-publish skill 已補規則。390px 實測無橫捲（英文篩選鈕原本會撐破，已加 flex-wrap）。deploy success，`/`、`/en/` 皆 200、18 張卡
+  - 坑：headless Chrome `--window-size=390` 實際最小寬約 500，截圖會「看起來」橫捲；要驗手機寬用 390px iframe 包起來截
 - 2026-10-05 hey-o-english 文案改為四級系列＋agy 流水線（level 2→3、modules 加 M09、platforms 加 Antigravity）；刪舊封面讓 Auto Covers 重截四級版首頁，轉 webp。
 - 2026-10-05 新增 hey-o-english（🎧 Hey-O! 英聽口說，website/教學/L2，M02+M01，hey-o.launchdock.app）；Auto Covers 截圖後轉 webp 210KB、刪 PNG。validate 21 筆通過、deploy success、線上卡片與 `/covers/hey-o-english.webp` 皆 200（注意封面線上路徑是 `/covers/` 不是 `/assets/covers/`）
 - 2026-09-03 新增 story-pipeline-spec（🎬 故事拆短片 — 可稽核的生成流程規格，repo/自動化/L3，M09+M01）；**M09（AI 內容與多媒體生成）的第一筆 demo**，此前 example_demos 是空的。封面是照該規格實跑 U-108 產出的四張劇照 2×2（同一角色跨四鏡，外型隨敘事改變但臉沒變），1600x900 webp 201KB。validate 20 筆通過、deploy success、線上實測卡片與封面皆 200
