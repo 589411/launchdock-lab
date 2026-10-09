@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="{{HTML_LANG}}">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Launchdock Lab｜藍鴨 AI 實例庫</title>
-<meta name="description" content="藍鴨 Launchdock 課堂實際案例庫:從提示詞到自動化工作流的可動手 demo。">
+<title>{{PAGE_TITLE}}</title>
+<meta name="description" content="{{META_DESC}}">
+<link rel="alternate" hreflang="zh-Hant" href="https://lab.launchdock.app/">
+<link rel="alternate" hreflang="en" href="https://lab.launchdock.app/en/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
@@ -20,6 +22,10 @@ a{color:inherit}
 header{max-width:1180px;margin:0 auto;padding:56px 24px 8px}
 .backhome{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-family:'Space Grotesk';font-weight:700;font-size:13px;color:#fff;background:var(--ink);border-radius:999px;padding:7px 16px;margin-bottom:18px;transition:background .15s}
 .backhome:hover{background:var(--amber-deep)}
+.toplinks{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+.toplinks .backhome{margin-bottom:0}
+.langswitch{font-family:'Space Grotesk';font-weight:700;font-size:13px;color:var(--ink);text-decoration:none;border:1.5px solid var(--ink);border-radius:999px;padding:6px 14px;transition:.15s}
+.langswitch:hover{background:var(--ink);color:#fff}
 .eyebrow{font-family:'Space Grotesk';font-weight:700;letter-spacing:.18em;font-size:13px;color:var(--amber-deep);text-transform:uppercase}
 h1{font-weight:900;font-size:clamp(30px,5vw,48px);letter-spacing:-.01em;margin:6px 0 10px}
 h1 em{font-style:normal;border-bottom:6px solid var(--amber)}
@@ -27,10 +33,10 @@ h1 em{font-style:normal;border-bottom:6px solid var(--amber)}
 .stats{font-family:'Space Grotesk';font-size:13px;color:var(--ink-soft);margin-top:14px}
 
 nav.filters{max-width:1180px;margin:22px auto 0;padding:0 24px;display:flex;flex-wrap:wrap;gap:8px}
-.f{font:inherit;font-size:14px;font-weight:500;padding:7px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);cursor:pointer;transition:.15s}
+.f{white-space:nowrap;font:inherit;font-size:14px;font-weight:500;padding:7px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);cursor:pointer;transition:.15s}
 .f:hover{border-color:var(--ink)}
 .f.on{background:var(--ink);color:#fff;border-color:var(--ink)}
-.lv-filter{margin-left:auto;display:flex;gap:8px}
+.lv-filter{margin-left:auto;display:flex;flex-wrap:wrap;gap:8px}
 
 main{max-width:1180px;margin:26px auto 80px;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:22px}
 .card{background:var(--card);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .15s}
@@ -75,20 +81,23 @@ footer a{color:var(--amber-deep)}
 </head>
 <body>
 <header>
-  <a href="https://launchdock.app" class="backhome">← 回藍鴨 Launchdock 主站</a>
+  <div class="toplinks">
+    <a href="{{HOME_URL}}" class="backhome">{{BACKHOME}}</a>
+    {{LANG_SWITCH}}
+  </div>
   <div class="eyebrow">Launchdock Lab</div>
-  <h1>藍鴨 <em>AI 實例庫</em></h1>
-  <p class="sub">課堂上看到的每個 demo 都在這裡:從一句提示詞,到可複製的範本,到全自動工作流。每張卡片最後都有「明天就能做的一件事」。</p>
+  <h1>{{H1}}</h1>
+  <p class="sub">{{SUB}}</p>
   <div class="stats">{{COUNT}} demos · updated {{UPDATED}}</div>
 </header>
 
 <nav class="filters">
   {{FILTERS}}
   <span class="lv-filter">
-    <button class="f on" data-l="*">所有 Level</button>
-    <button class="f" data-l="1">L1 提示詞</button>
-    <button class="f" data-l="2">L2 範本</button>
-    <button class="f" data-l="3">L3 自動化</button>
+    <button class="f on" data-l="*">{{LV_ALL}}</button>
+    <button class="f" data-l="1">{{LV1}}</button>
+    <button class="f" data-l="2">{{LV2}}</button>
+    <button class="f" data-l="3">{{LV3}}</button>
   </span>
 </nav>
 
@@ -99,10 +108,10 @@ footer a{color:var(--amber-deep)}
 <dialog id="qrmodal">
   <h4 id="qrtitle"></h4>
   <div id="qrbox"></div>
-  <div><button class="btn close" onclick="qrmodal.close()">關閉</button></div>
+  <div><button class="btn close" onclick="qrmodal.close()">{{CLOSE}}</button></div>
 </dialog>
 
-<footer>藍鴨 Launchdock · <a href="https://launchdock.app">launchdock.app</a> · 本頁由 projects.yaml 自動建置</footer>
+<footer>{{FOOTER}}</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>

@@ -52,8 +52,20 @@ def main() -> int:
                 errors.append(f"[placeholder] {p.get('id')}: 連結含 REPLACE 佔位符,"
                               f"請填實際 URL 或先把 status 改為 archived")
 
+    # 英文版:en.labels 依序對應 links,數量必須一致,否則英文頁按鈕會錯位
+    for p in projects:
+        if not isinstance(p, dict) or not isinstance(p.get("en"), dict):
+            continue
+        labels = p["en"].get("labels")
+        if labels is not None and len(labels) != len(p.get("links", [])):
+            errors.append(f"[en] {p.get('id')}: en.labels 有 {len(labels)} 個,"
+                          f"links 有 {len(p.get('links', []))} 筆,數量必須一致")
+
     # 類型與連結的搭配建議(警告不擋)
     warn = []
+    for p in projects:
+        if isinstance(p, dict) and p.get("status") == "active" and not p.get("en"):
+            warn.append(f"[warn] {p.get('id')}: 缺 en 區塊,英文版 /en/ 會退回顯示中文")
     for p in projects:
         if not isinstance(p, dict):
             continue

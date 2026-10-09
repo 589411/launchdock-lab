@@ -23,6 +23,7 @@ description: 一句話上架 demo 到 lab.launchdock.app。使用者給一個 UR
    - `links`:1–4 筆,kind 對照表在 CLAUDE.md。**絕不留 REPLACE 佔位符**——沒有的連結就不要列;
      若必要連結拿不到,把 status 設 archived 並告知使用者缺什麼。
    - `check`:公開 http(s) 頁面用 `head`,LINE/GAS 這類擋 HEAD 的用 `none`
+   - `en`:英文版文字(title/summary/description/tomorrow/labels),格式見 CLAUDE.md「英文版」;labels 數量要和 links 一致
 3. **起草給使用者確認**:貼出完整 YAML 條目,等確認再寫入。
 4. **寫入並驗證**:append 到 `data/projects.yaml` → `python scripts/validate.py` 必須 exit 0。
 5. **建置**:`python scripts/build.py`,確認卡片數 +1。
@@ -34,4 +35,4 @@ description: 一句話上架 demo 到 lab.launchdock.app。使用者給一個 UR
 
 - validate.py exit 0、build.py 卡片數正確
 - 條目無 REPLACE、無空欄位
-- 回報使用者:條目 id、上線網址 lab.launchdock.app、封面處理方式
+- 回報使用者:條目 id、上線網址 lab.launchdock.app(英文 lab.launchdock.app/en/)、封面處理方式

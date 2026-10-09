@@ -55,6 +55,7 @@
 | `cover` | 選填 | 檔名 | 檔案必須存在於 assets/covers/ |
 | `qr` | 選填 | true/false | 上課投影時顯示 QR code 按鈕 |
 | `pinned` | 選填 | true/false | 置頂(排在所有卡片最前面) |
+| `en` | 強烈建議 | 物件,見下方「英文版」 | 英文頁 `/en/` 的文字;缺了英文頁會退回顯示中文 |
 
 ### links.kind 對照
 
@@ -82,6 +83,23 @@
 | `other` | 以上皆非 | 至少一筆 | none |
 
 **check 的原理**:Notion、Gemini share、AI Studio 即使內容已死也常回 200,機器檢查無意義,所以設 `none`,靠人工巡檢。能可靠用 HTTP 檢查的才設 `head`。
+
+### 英文版(`en` 區塊)
+
+lab 有中英兩頁:`/`(中文)與 `/en/`(英文),同一份 projects.yaml 建出來。英文文字放在條目的 `en` 區塊:
+
+```yaml
+  en:
+    title: "🎧 Hey-O! Listening & Speaking"      # 必填,≤ 60 字元
+    summary: "Practice English listening ..."    # 必填,≤ 180 字元
+    description: "..."                           # 選填,≤ 450 字元(中文有 description 就要給)
+    tomorrow: "..."                              # 選填,≤ 120 字元(中文有 tomorrow 就要給)
+    labels: ["Start practicing", "Source"]       # 選填,依序對應 links;數量必須和 links 一致
+```
+
+- 新增條目時**一併寫 `en`**。缺 `en` 時 validate 會警告(不擋),英文頁顯示中文。
+- `labels` 省略時,英文按鈕用 kind 預設字(Open demo / Source / Watch video …)。
+- category / type / level 的英文由 build.py 對照表處理,條目不用寫。
 
 ### platforms 與 description 的分工
 

@@ -16,6 +16,11 @@
   status: active
   check: head
   added: 2026-06-12
+  en:
+    title: "LaunchDock main site"
+    summary: "A semi-automated content pipeline: published from GitHub, deployed on Cloudflare."
+    tomorrow: "Publish your first web page for free with GitHub Pages"
+    labels: ["Open site"]
 
 - id: gas-ordering
   title: 🍜 初原麵場點餐系統
@@ -35,6 +40,12 @@
   status: active
   check: head
   added: 2026-06-12
+  en:
+    title: "🍜 Noodle shop ordering system"
+    summary: "Add ?page=kitchen to the same URL and it becomes the kitchen screen. A full front and back end on Google Apps Script, with orders stored in Google Sheets."
+    description: "A full-stack app inside Google's ecosystem: doGet() routes by URL parameter, so customers see the ordering page and the kitchen sees the prep queue. Orders land in Google Sheets in real time, with no server and no cost."
+    tomorrow: "Build a simple ordering system"
+    labels: ["Order page", "Kitchen view", "Order data"]
 
 - id: gas-line-push
   title: 📲 LINE 自動推播
@@ -68,6 +79,12 @@
   status: active
   check: none
   added: 2026-06-13
+  en:
+    title: "⛪ Smart church operations"
+    summary: "An admin template for church plants and small churches that keeps day-to-day operations running. All sample data is AI-generated."
+    description: "A complete admin template for new and small churches covering members, event planning and finance tracking. Every sample record is AI-generated mock data."
+    tomorrow: "Duplicate the template and set up your first church admin database"
+    labels: ["Duplicate"]
 
 - id: gemini-meeting-notes
   title: 🤖 Gemini Gems 工具組
@@ -87,6 +104,12 @@
   status: active
   check: none
   added: 2026-06-12
+  en:
+    title: "🤖 Gemini Gems toolkit"
+    summary: "Four expert Gemini Gems: strategic planning, meeting analysis, pain-point discovery and video analysis."
+    description: "OGSM Strategy Architect turns a vision into a one-page plan. Meeting Insight Questioner generates deeper questions. Workplace Pain-Point Coach uncovers blind spots through conversation. Video Analyst pulls out the key points of a video."
+    tomorrow: "Package a prompt you keep repeating into an expert module"
+    labels: ["OGSM Strategist", "Meeting Questioner", "Pain-Point Coach", "Video Analyst"]
 
 - id: n8n-article-pipeline
   title: ⚙️ 文章自動產線
@@ -136,6 +159,12 @@
   status: active
   check: head
   added: 2026-06-12
+  en:
+    title: "📖 Daily Bread"
+    summary: "A mobile-first daily Bible-reading site: progress synced across devices with Firebase, LINE sharing, installable on your home screen."
+    description: "How far a static front end can go: an installable PWA, cross-device progress sync via Firebase (Google sign-in), one-tap LINE sharing and a Cloudflare Worker for back-end logic, all on free tiers."
+    tomorrow: "Turn your website into an app people can install on their phone"
+    labels: ["Start reading", "My plan", "Source"]
 
 - id: sdd-learning-guide
   title: 📚 SDD 軟體開發實戰指南
@@ -153,6 +182,12 @@
   status: active
   check: head
   added: 2026-06-13
+  en:
+    title: "📚 Spec-driven development guide"
+    summary: "A complete spec-driven development course for non-engineers: an 8-week, AI-assisted career-change program."
+    description: "Spec-driven development (SDD) from scratch, covering requirements analysis, writing specs and AI-assisted implementation, for non-engineers who want to move into software."
+    tomorrow: "Write your first software spec with AI"
+    labels: ["Open course", "Source"]
 
 - id: launchdock-lab
   title: ⚙️ 藍鴨實驗室
@@ -169,6 +204,11 @@
   status: active
   check: head
   added: 2026-06-13
+  en:
+    title: "⚙️ LaunchDock Lab"
+    summary: "GitHub Actions builds and deploys a static site automatically, with a zero-cost publishing flow."
+    tomorrow: "Build your first website that updates itself"
+    labels: ["Open site", "Source"]
 
 - id: bible-atlas
   title: 🗺️ 聖經像素地圖
@@ -186,6 +226,12 @@
   status: active
   check: head
   added: 2026-06-13
+  en:
+    title: "🗺️ Bible pixel atlas"
+    summary: "A Bible history map styled like a retro strategy game, organized by era so names and places stop blurring together."
+    description: "Inspired by pixel-art strategy games, it helps Chinese-speaking readers build a sense of biblical space and time and stop mixing up people and places while reading."
+    tomorrow: "Build an interactive historical timeline map"
+    labels: ["Open map", "Source"]
 
 - id: stock-dashboard
   title: 📈 股票資訊看板
@@ -203,6 +249,12 @@
   status: active
   check: head
   added: 2026-06-13
+  en:
+    title: "📈 Stock dashboard"
+    summary: "GitHub Actions runs a Python scraper on a schedule, turns messy stock data into structured data and refreshes the dashboard."
+    description: "Zero-cost automation: a scheduled GitHub Actions job runs a Python script that fetches stock data, structures it and pushes it back to GitHub Pages. It can later feed a workflow for conditional alerts (such as a KD threshold)."
+    tomorrow: "Build a dashboard that tracks stock data automatically"
+    labels: ["Open dashboard", "Source"]
 
 - id: mes-n-mfa
   title: 🏭 MES + MFA 智慧製造分析
@@ -220,6 +272,12 @@
   status: active
   check: head
   added: 2026-06-13
+  en:
+    title: "🏭 MES + MFA smart manufacturing"
+    summary: "Material flow analysis plus AI formula prediction: data visualization and machine learning for manufacturing."
+    description: "An MFA dashboard monitors material flow on the production line and flags anomalies. A CCL formula predictor uses Random Forest to optimize 5G electronic-material formulas, visualized with Chart.js."
+    tomorrow: "Use AI to predict the best production formula"
+    labels: ["Open analytics", "Source"]
 
 - id: legal-ai-agent-workshop
   title: ⚖️ 法律事務所 AI Agent 實戰課
@@ -239,6 +297,12 @@
   status: active
   check: head
   added: 2026-06-25
+  en:
+    title: "⚖️ AI agents for law firms workshop"
+    summary: "Interactive slides plus a legal workbench demo showing an AI agent workflow that humans can review."
+    description: "A mock law firm ties together a legal-news radar, LINE scheduling, timesheet roll-ups and draft invoices, with human sign-off, confidentiality and permission boundaries clearly marked."
+    tomorrow: "Pick one repetitive admin process and mark which steps AI runs and which a person confirms"
+    labels: ["Open slides", "Workbench", "Source"]
 
 - id: prompt-magic
   title: ✨ 魔法詠唱產生器
@@ -256,6 +320,12 @@
   status: active
   check: none
   added: 2026-06-28
+  en:
+    title: "✨ Magic spell generator"
+    summary: "Parents and kids fill in the blanks to summon AI image prompts, with film storyboards and a bilingual template library."
+    description: "Four modes: cute for little kids, cool fantasy for older kids, film storyboards for adults, and a fill-in template library (17 templates, 61 word banks, Chinese and English, searchable). Expand into a full prompt for Gemini or ChatGPT, or upload a photo for AI makeover ideas."
+    tomorrow: "Write your first AI image prompt with the fill-in-the-blank method"
+    labels: ["Open tool", "Source"]
 
 - id: masters-hub
   title: 🎓 大師專家團
@@ -273,6 +343,12 @@
   status: active
   check: none
   added: 2026-07-10
+  en:
+    title: "🎓 Masters Hub"
+    summary: "22 management and marketing masters packaged as Gems and GPTs. Pick a panel of experts for the task and start right away."
+    description: "Five topic packs (customer insight, pricing, brand marketing, negotiation and persuasion, leadership), each with 3–10 masters such as Kotler, Christensen, Nagle, Aaker, Cialdini, Drucker and Sinek. Every master comes as a free Gemini Gem and a ChatGPT GPT, plus 3 practical workplace tools."
+    tomorrow: "Pick a task you're facing, open one master and paste in your material"
+    labels: ["Open hub", "Source"]
 
 - id: swing-lab
   title: 🥁 SWING LAB 爵士鼓節奏訓練場
@@ -290,6 +366,12 @@
   status: active
   check: head
   added: 2026-07-12
+  en:
+    title: "🥁 SWING LAB drum rhythm trainer"
+    summary: "Detects your hits through the microphone, auto-calibrates system latency and scores how well you stay on the beat."
+    description: "Three steps: measure background noise to set a threshold, tap along with 12 clicks to calibrate latency, then get your timing accuracy. Play into the mic or use click/spacebar, switch between students, and keep practice history across devices with a sync code."
+    tomorrow: "Put on headphones and tap 12 beats with the metronome to measure your timing"
+    labels: ["Open trainer", "Source"]
 - id: sunlit-retail
   title: '🌤 日晴生活 — 六間分店的真相'
   type: website
@@ -313,6 +395,12 @@
   status: active
   check: head
   added: 2026-08-04
+  en:
+    title: "🌤 Sunlit: the truth about six stores"
+    summary: "[ITRI course] Consumer behavior insight and prediction workshop: teaching example"
+    description: "Six stores in southern Taiwan, 1,200 members, 18 months of operations. You're the new analyst and the manager asks which customers are worth investing in. Export CRM, POS and ERP data from the back office and dig for the answer with an LLM. The most frequent visitors may not be who you think."
+    tomorrow: "Export the member list from the back office and have an LLM find duplicate sign-ups"
+    labels: ["Storefront", "Back office", "Source"]
 - id: violin-lesson-analyse
   title: '🎻 女兒的小提琴課 — 錄影自動筆記'
   type: repo
@@ -330,6 +418,12 @@
   status: active
   check: head
   added: 2026-08-15
+  en:
+    title: "🎻 Violin lessons: auto notes from video"
+    summary: "Turns lesson recordings into transcripts, key-point notes and chapters, plus a practice player that jumps between sections."
+    description: "Dozens of recordings, none ever rewatched. Extract audio → transcribe locally with mlx-whisper → Claude pulls out what the teacher keeps stressing and the homework → chapters split by meaning → a practice.html jump player. The video never leaves the computer."
+    tomorrow: "Run your latest lesson recording through Whisper to get a transcript"
+    labels: ["Source"]
 - id: story-pipeline-spec
   title: '🎬 故事拆短片 — 可稽核的生成流程規格'
   type: repo
@@ -347,6 +441,12 @@
   status: active
   check: head
   added: 2026-09-03
+  en:
+    title: "🎬 Story to short videos: an auditable spec"
+    summary: "A spec for turning a story into short episodes: nine units, each with its own intermediate file, so you know which step to fix."
+    description: "Most AI video is one big pot: if the result is bad you start over without knowing why. This splits the flow into nine units with three JSON intermediates: a beat sheet, a character sheet and an episode split. Image prompts are assembled by code from those files, not handwritten, so changing the lead's hair color updates every shot. The four cover images were made with this spec."
+    tomorrow: "Break a story you have into a beat sheet before generating a single image"
+    labels: ["Source"]
 - id: hey-o-english
   title: '🎧 Hey-O! 英聽口說'
   type: website
@@ -368,3 +468,9 @@
   status: active
   check: head
   added: 2026-10-04
+  en:
+    title: "🎧 Hey-O! Listening & Speaking"
+    summary: "Practice English listening and speaking with YouTube videos: four levels from kids' animation to real sermons, with scored shadowing, dictation and flashcards."
+    description: "Four series from easy to hard: Hey-O Bible cartoons → daily devotionals → Billy Graham sermons → Bill Johnson sermons. Lessons are batch-produced by a pipeline: yt-dlp fetches real captions, agy segments, translates and picks words, and code checks alignment before publishing; long sermons are split by chapter. Tools fetch, the LLM understands, code verifies."
+    tomorrow: "Pick a YouTube video you like, shadow three lines a day and record yourself to compare"
+    labels: ["Start practicing", "Source"]
