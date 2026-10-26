@@ -475,7 +475,7 @@
     tomorrow: "Pick a YouTube video you like, shadow three lines a day and record yourself to compare"
     labels: ["Start practicing", "Source"]
 - id: home-gym
-  title: '💪 在家練 戰情室'
+  title: '💪 我家也有健身房'
   type: website
   category: 生活
   level: 3
@@ -496,7 +496,7 @@
   check: head
   added: 2026-10-26
   en:
-    title: "💪 Home Gym War Room"
+    title: "💪 My Home Has a Gym Too"
     summary: "Pick a body part, choose from quality-filtered band and kettlebell workout videos, and follow along every day."
     description: "Videos are not just search-ranked: they pass a quality gate on views, subscribers, like rate and description length. Pipeline: yt-dlp fetches real stats, agy classifies, codex writes follow-along cues, and code verifies the equipment tag appears in the title or description. A plain static site with no framework or backend; progress lives only on your phone."
     tomorrow: "Pick a body part and finish one video under 15 minutes on your phone"
