@@ -474,3 +474,30 @@
     description: "Four series from easy to hard: Hey-O Bible cartoons → daily devotionals → Billy Graham sermons → Bill Johnson sermons. Lessons are batch-produced by a pipeline: yt-dlp fetches real captions, agy segments, translates and picks words, and code checks alignment before publishing; long sermons are split by chapter. Tools fetch, the LLM understands, code verifies."
     tomorrow: "Pick a YouTube video you like, shadow three lines a day and record yourself to compare"
     labels: ["Start practicing", "Source"]
+- id: home-gym
+  title: '💪 在家練 戰情室'
+  type: website
+  category: 生活
+  level: 3
+  modules: [M02, M09, M01]
+  platforms: ['GitHub', 'YouTube', 'Antigravity', 'Codex']
+  summary: '挑想練的部位，從篩過品質的彈力帶、壺鈴健身影片裡選一支，每天打開跟著做。'
+  description: '影片不是搜尋排序，而是過品質閘門：觀看、訂閱、讚率、說明長度都要達標。流水線：yt-dlp 抓真實數據，agy 分類，codex 寫跟練動作重點，程式驗證器材標籤確實出現在標題或說明。純靜態站，沒有框架、沒有後端，進度只存在你的手機。'
+  tomorrow: '挑一個今天想練的部位，用手機跟著一支 15 分鐘內的影片做完'
+  qr: true
+  links:
+    - label: '開始練習'
+      url: 'https://gym.launchdock.app'
+      kind: open
+    - label: '原始碼'
+      url: 'https://github.com/589411/home-gym'
+      kind: repo
+  status: active
+  check: head
+  added: 2026-10-26
+  en:
+    title: "💪 Home Gym War Room"
+    summary: "Pick a body part, choose from quality-filtered band and kettlebell workout videos, and follow along every day."
+    description: "Videos are not just search-ranked: they pass a quality gate on views, subscribers, like rate and description length. Pipeline: yt-dlp fetches real stats, agy classifies, codex writes follow-along cues, and code verifies the equipment tag appears in the title or description. A plain static site with no framework or backend; progress lives only on your phone."
+    tomorrow: "Pick a body part and finish one video under 15 minutes on your phone"
+    labels: ["Start practicing", "Source"]
