@@ -501,3 +501,29 @@
     description: "Videos are not just search-ranked: they pass a quality gate on views, subscribers, like rate and description length. Pipeline: yt-dlp fetches real stats, agy classifies, codex writes follow-along cues, and code verifies the equipment tag appears in the title or description. A plain static site with no framework or backend; progress lives only on your phone."
     tomorrow: "Pick a body part and finish one video under 15 minutes on your phone"
     labels: ["Start practicing", "Source"]
+- id: remotion-explainer
+  title: '🎞️ 一句話做解說影片'
+  type: website
+  category: 自動化
+  level: 3
+  modules: [M09, M01]
+  platforms: ['Remotion', 'Claude Code', 'Codex', 'Antigravity']
+  summary: '複製一段提示詞貼給 AI agent，它自己寫程式、輸出一支 15 秒的中文解說影片。'
+  description: 'Remotion 讓影片變成程式碼：每一格畫面都是網頁，字、顏色、時間都能改。再裝上 Remotion 官方的 agent 技能，AI 就知道該怎麼寫。頁面上有成品影片、可複製的提示詞，還有一份 SKILL.md，存進技能資料夾後一句話就能再做一支。'
+  tomorrow: '把提示詞貼進 Claude Code，主題換成你的課，做出 15 秒片頭'
+  links:
+    - label: '看成品與提示詞'
+      url: 'https://explainer.launchdock.app'
+      kind: open
+    - label: '原始碼'
+      url: 'https://github.com/589411/lab-explainer-video'
+      kind: repo
+  status: active
+  check: head
+  added: 2026-11-01
+  en:
+    title: "🎞️ One-prompt explainer video"
+    summary: "Paste one prompt into an AI agent and it writes the code and renders a 15-second explainer video."
+    description: "Remotion turns video into code: every frame is a web page, so text, colors and timing are all editable. With Remotion's official agent skills installed, the AI knows how to write it. The page has the finished video, a copy-paste prompt, and a SKILL.md you can drop into your skills folder to make another one with a single sentence."
+    tomorrow: "Paste the prompt into Claude Code, swap in your own topic, and make a 15-second intro"
+    labels: ["Video & prompt", "Source"]
