@@ -508,9 +508,9 @@
   level: 3
   modules: [M09, M01]
   platforms: ['Remotion', 'Claude Code', 'Codex', 'Antigravity']
-  summary: '複製一段提示詞貼給 AI agent，它自己寫程式、輸出一支 15 秒的中文解說影片。'
-  description: 'Remotion 讓影片變成程式碼：每一格畫面都是網頁，字、顏色、時間都能改。再裝上 Remotion 官方的 agent 技能，AI 就知道該怎麼寫。頁面上有成品影片、可複製的提示詞，還有一份 SKILL.md，存進技能資料夾後一句話就能再做一支。'
-  tomorrow: '把提示詞貼進 Claude Code，主題換成你的課，做出 15 秒片頭'
+  summary: '你不用會寫程式：複製一段文字貼給 AI 助手，它就幫你做出 15 秒的解說影片。'
+  description: '打開 Claude Code、Codex 或 Antigravity 這類會自己操作電腦的 AI 助手（AI agent），貼上文字，等它下載工具、寫程式、輸出影片，檔案就出現在你的資料夾。頁面有成品、一步步的新手教學，和一份技能說明書（SKILL.md），存起來下次一句話就能再做。'
+  tomorrow: '打開 AI 助手，貼上那段文字，做出你的第一支 15 秒影片'
   links:
     - label: '看成品與提示詞'
       url: 'https://explainer.launchdock.app'
@@ -523,7 +523,7 @@
   added: 2026-11-01
   en:
     title: "🎞️ One-prompt explainer video"
-    summary: "Paste one prompt into an AI agent and it writes the code and renders a 15-second explainer video."
-    description: "Remotion turns video into code: every frame is a web page, so text, colors and timing are all editable. With Remotion's official agent skills installed, the AI knows how to write it. The page has the finished video, a copy-paste prompt, and a SKILL.md you can drop into your skills folder to make another one with a single sentence."
-    tomorrow: "Paste the prompt into Claude Code, swap in your own topic, and make a 15-second intro"
+    summary: "No coding needed: paste one block of text into an AI assistant and it makes a 15-second explainer video for you."
+    description: "Open an AI assistant that can work on your computer (an AI agent) such as Claude Code, Codex or Antigravity, paste the text, and wait while it installs tools, writes code and renders the video into your folder. The page has the finished video, a step-by-step beginner guide, and a skill file (SKILL.md) you can save to make another one with a single sentence."
+    tomorrow: "Open an AI assistant, paste the text, and make your first 15-second video"
     labels: ["Video & prompt", "Source"]
