@@ -501,3 +501,26 @@
     description: "Videos are not just search-ranked: they pass a quality gate on views, subscribers, like rate and description length. Pipeline: yt-dlp fetches real stats, agy classifies, codex writes follow-along cues, and code verifies the equipment tag appears in the title or description. A plain static site with no framework or backend; progress lives only on your phone."
     tomorrow: "Pick a body part and finish one video under 15 minutes on your phone"
     labels: ["Start practicing", "Source"]
+- id: zero-install-animation
+  title: '✨ 免安裝：一段文字做動畫解說'
+  type: website
+  category: 教學
+  level: 1
+  modules: [M09, M01]
+  platforms: ['Claude', 'ChatGPT', 'Gemini']
+  summary: '你不用會寫程式，也不用安裝任何東西：把一段文字貼給網頁版 AI，它就做出 15 秒的動畫解說。'
+  description: '打開 Claude、ChatGPT 或 Gemini 的網頁，貼上提示詞，AI 會寫出一個網頁動畫，直接在對話旁邊預覽，或存成 .html 雙擊播放。這是網頁動畫，不是影片檔，想要影片就用螢幕錄影。頁面還有一份小幫手指示和技能檔，存起來下次只要說主題。'
+  tomorrow: '打開網頁版 AI，貼上那段文字，看它做出你的第一段動畫'
+  links:
+    - label: '看成品與提示詞'
+      url: 'https://animate.launchdock.app'
+      kind: open
+  status: active
+  check: head
+  added: 2026-11-01
+  en:
+    title: "✨ No install: one prompt, an animated explainer"
+    summary: "No coding and nothing to install: paste one block of text into a web AI and it makes a 15-second animated explainer."
+    description: "Open Claude, ChatGPT or Gemini in your browser and paste the prompt. The AI writes a web animation you can preview right beside the chat, or save as an .html file and double-click. It is a web animation, not a video file; screen-record it if you need a video. The page also has assistant instructions and a skill file so next time you only name the topic."
+    tomorrow: "Open a web AI, paste the text, and watch it make your first animation"
+    labels: ["Animation & prompt"]
