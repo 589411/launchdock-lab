@@ -515,6 +515,9 @@
     - label: '看成品與提示詞'
       url: 'https://animate.launchdock.app'
       kind: open
+    - label: '原始碼'
+      url: 'https://github.com/589411/lab-explainer-animate'
+      kind: repo
   status: active
   check: head
   added: 2026-11-01
@@ -523,4 +526,4 @@
     summary: "No coding and nothing to install: paste one block of text into a web AI and it makes a 15-second animated explainer."
     description: "Open Claude, ChatGPT or Gemini in your browser and paste the prompt. The AI writes a web animation you can preview right beside the chat, or save as an .html file and double-click. It is a web animation, not a video file; screen-record it if you need a video. The page also has assistant instructions and a skill file so next time you only name the topic."
     tomorrow: "Open a web AI, paste the text, and watch it make your first animation"
-    labels: ["Animation & prompt"]
+    labels: ["Animation & prompt", "Source"]
