@@ -19,6 +19,7 @@
 - gas-line-push 的 LINE 官方帳號連結與影片、n8n-article-pipeline 的影片、openclaw 的公開 repo URL——只有你有。
 
 ## 進度脈絡（新的在上）
+- 2026-11-10 合併 `lab/analysis-sets` 上架 analysis-sets（📊 數據分析套餐圖鑑，website/資料/L2/M07，sets.launchdock.app，repo 589411/lab-analysis-sets）。**網站先 200 才合併**。DNS 由 Claude in Chrome 在 Cloudflare dashboard 加（Keychain 被 auto mode 擋）；憑證照舊「清空再設回 cname」才簽。validate 24 筆通過（active 21）、build 21 張卡、deploy success、`/`、`/en/`、`/covers/analysis-sets.webp` 皆 200，分支已刪
 - 2026-11-02 合併 `lab/zero-install-animation` 上架 zero-install-animation（✨ 免安裝：一段文字做動畫解說，website/教學/L1，M09+M01，animate.launchdock.app）。先修好子網域 HTTPS（GitHub 憑證卡住→清空再設回 cname 才簽發）。validate 23 筆通過、build 20 張卡
 - 2026-10-26 新增 home-gym（💪 我家也有健身房，website/生活/L3，M02+M09+M01，gym.launchdock.app）；validate 22 筆通過、deploy success、`/` 與 `/en/` 卡片線上皆有。封面由 codex 圖像生成（客廳彈力帶深蹲插畫、無文字），1600x900 webp 177KB
 - 2026-10-10 **英文版上線** `/en/`：projects.yaml 每筆加選填 `en`（title/summary/description/tomorrow/labels，18 筆 active 全補）；build.py 同時產 `dist/index.html` 與 `dist/en/index.html`，缺 en 退回中文；模板文字改 `{{佔位}}`＋右上中英切換＋hreflang；validate 檢 labels 數＝links 數、缺 en 警告；CLAUDE.md／lab-publish skill 已補規則。390px 實測無橫捲（英文篩選鈕原本會撐破，已加 flex-wrap）。deploy success，`/`、`/en/` 皆 200、18 張卡
