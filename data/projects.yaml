@@ -527,3 +527,28 @@
     description: "Open Claude, ChatGPT or Gemini in your browser and paste the prompt. The AI writes a web animation you can preview right beside the chat, or save as an .html file and double-click. It is a web animation, not a video file; screen-record it if you need a video. The page also has assistant instructions and a skill file so next time you only name the topic."
     tomorrow: "Open a web AI, paste the text, and watch it make your first animation"
     labels: ["Animation & prompt", "Source"]
+- id: analysis-sets
+  title: '📊 數據分析套餐圖鑑'
+  type: website
+  category: 資料
+  level: 2
+  modules: [M07]
+  summary: '回歸、分群、分類、預測共 12 個方法做成套餐：放進你的表格、拖滑桿，就看到圖表和白話結論。'
+  description: '像 Orange 那樣做分析，但不用自己拖節點接流程。每個套餐固定做完清資料、建模型、留考題檢查，再給一句結論、一句別過度解讀、一件本週可做的事。純 JavaScript，資料只在你的瀏覽器裡計算；演算法用 Python 套件核對過。教學原型，示範資料為模擬。'
+  tomorrow: '把最近 24 個月的月營收貼進「趨勢加季節」，看哪個月最旺'
+  links:
+    - label: '開啟圖鑑'
+      url: 'https://sets.launchdock.app'
+      kind: open
+    - label: '原始碼'
+      url: 'https://github.com/589411/lab-analysis-sets'
+      kind: repo
+  status: active
+  check: head
+  added: 2026-11-10
+  en:
+    title: "📊 Data Analysis Set Menu"
+    summary: "Twelve methods for regression, clustering, classification and forecasting, packaged as set menus: drop in your table, drag a slider, get a chart and a plain-language reading."
+    description: "Analysis in the spirit of Orange, without wiring nodes yourself. Each set runs a fixed recipe: clean the data, fit the model, hold out test rows, then give one conclusion, one caution and one thing to do this week. Plain JavaScript; your data is computed only in your browser. Algorithms were checked against Python libraries. A teaching prototype with simulated demo data."
+    tomorrow: "Paste your last 24 months of revenue into Trend + Seasonal and see which month peaks"
+    labels: ["Open the menu", "Source"]
