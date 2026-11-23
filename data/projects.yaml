@@ -552,3 +552,30 @@
     description: "Analysis in the spirit of Orange, without wiring nodes yourself. Each set runs a fixed recipe: clean the data, fit the model, hold out test rows, then give one conclusion, one caution and one thing to do this week. Plain JavaScript; your data is computed only in your browser. Algorithms were checked against Python libraries. A teaching prototype with simulated demo data."
     tomorrow: "Paste your last 24 months of revenue into Trend + Seasonal and see which month peaks"
     labels: ["Open the menu", "Source"]
+- id: winds-tutorials
+  title: '🎷 管樂入門教學精選'
+  type: website
+  category: 教學
+  level: 2
+  modules: [M02, M09, M01]
+  platforms: ['GitHub', 'YouTube', 'Claude Code']
+  summary: '挑長笛、單簧管或法國號，從驗證過的 YouTube 入門教學裡選一支跟著練，看完就勾起來。'
+  description: '資料來自一份交接文件，但不直接信任：每個連結都用 YouTube oEmbed 驗證存在，標題與頻道由程式回填，失效就擋下不上架。純靜態站，沒有框架、沒有後端，進度只存在你的手機。'
+  tomorrow: '挑一支樂器，看完一支 15 分鐘內的入門影片，吹出第一個音'
+  qr: true
+  links:
+    - label: '開始練習'
+      url: 'https://winds.launchdock.app'
+      kind: open
+    - label: '原始碼'
+      url: 'https://github.com/589411/winds'
+      kind: repo
+  status: active
+  check: head
+  added: 2026-11-23
+  en:
+    title: "🎷 Wind Instrument Starter Lessons"
+    summary: "Pick flute, clarinet or French horn, choose a verified YouTube beginner lesson, and tick it off when done."
+    description: "The source was a handoff document, but nothing is taken on trust: every link is verified through YouTube oEmbed, titles and channels are filled in by code, and dead links block publishing. A plain static site with no framework or backend; progress lives only on your phone."
+    tomorrow: "Pick one instrument and finish one beginner video under 15 minutes to get your first note"
+    labels: ["Start practicing", "Source"]
