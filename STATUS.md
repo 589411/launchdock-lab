@@ -1,7 +1,7 @@
 # STATUS — launchdock-lab
 
 > 單一真相。每次離開前更新（全域憲法收尾鐵律）。
-**最後更新：** 2026-11-02
+**最後更新：** 2026-11-23
 **整體狀態：** 🟢 進行中
 
 ## 一句話現況
@@ -19,6 +19,7 @@
 - gas-line-push 的 LINE 官方帳號連結與影片、n8n-article-pipeline 的影片、openclaw 的公開 repo URL——只有你有。
 
 ## 進度脈絡（新的在上）
+- 2026-11-23 新增 winds-tutorials（🎷 管樂入門教學精選，website/教學/L2，M02+M09+M01，winds.launchdock.app，repo 589411/winds）。網站先 200 才上架。DNS 這次改用 **cloudflare-api MCP**（Chrome 擴充功能連不上）加 CNAME；新子網域 HTTPS 照例要「清空再設回 cname」踢一下才簽（約 1 分鐘）。validate 25 筆通過（active 22）、build 22 張卡、deploy success、`/`、`/en/`、`/covers/winds-tutorials.webp` 皆 200。封面由 codex 生成（三種樂器插畫、無文字）1600x900 webp 130KB。**品質閘門（yt-dlp 指標＋agy 分級）未做**，description 維持「連結存在」的誠實描述；來源 28 筆未做品質篩選，法國號中文多為介紹非教學。單簧管「零基礎入門系列」截斷的播放清單網址已排除、未補猜。踩坑已記進共用 solutions.md（Cloudflare DNS 條）。
 - 2026-11-10 合併 `lab/analysis-sets` 上架 analysis-sets（📊 數據分析套餐圖鑑，website/資料/L2/M07，sets.launchdock.app，repo 589411/lab-analysis-sets）。**網站先 200 才合併**。DNS 由 Claude in Chrome 在 Cloudflare dashboard 加（Keychain 被 auto mode 擋）；憑證照舊「清空再設回 cname」才簽。validate 24 筆通過（active 21）、build 21 張卡、deploy success、`/`、`/en/`、`/covers/analysis-sets.webp` 皆 200，分支已刪
 - 2026-11-02 合併 `lab/zero-install-animation` 上架 zero-install-animation（✨ 免安裝：一段文字做動畫解說，website/教學/L1，M09+M01，animate.launchdock.app）。先修好子網域 HTTPS（GitHub 憑證卡住→清空再設回 cname 才簽發）。validate 23 筆通過、build 20 張卡
 - 2026-10-26 新增 home-gym（💪 我家也有健身房，website/生活/L3，M02+M09+M01，gym.launchdock.app）；validate 22 筆通過、deploy success、`/` 與 `/en/` 卡片線上皆有。封面由 codex 圖像生成（客廳彈力帶深蹲插畫、無文字），1600x900 webp 177KB
